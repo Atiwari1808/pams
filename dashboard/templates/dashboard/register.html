@@ -1,0 +1,104 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Create Account - PAMS{% endblock %}
+{% load static %}
+{% block content %}
+<style>
+    body { background: linear-gradient(132deg, #ebefefed 0%, #6b8deab3 100%); }
+    .login-wrap {
+        min-height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login-card {
+        background: #fff;
+        border-radius: 5px;
+        padding: 2.5rem 2rem;
+        width: 100%;
+        max-width: 420px;
+        box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+    }
+    .form-control {
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+        border: 1.5px solid #e2e8f0;
+        font-size: 0.95rem;
+    }
+    .form-control:focus { border-color: #0d6efd; box-shadow: 0 0 0 3px rgba(13,110,253,0.12); }
+    .btn-register {
+        background: linear-gradient(135deg, #198754, #0d6efd);
+        border: none;
+        border-radius: 10px;
+        padding: 0.75rem;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: opacity 0.2s;
+    }
+    .btn-register:hover { opacity: 0.9; }
+    .btn-back-link { font-size: 0.88rem; color: #64748b; }
+</style>
+
+<div class="login-wrap">
+    <div class="login-card text-center">
+        <div class="brand-header d-flex align-items-center justify-content-center gap-2 mb-1">
+            <span><img src="{% static 'img/logo.png' %}" alt="Logo" style="height:28px;"></span>
+            <h2 style="font-weight:700; font-size:1.5rem; color:#1a1d29; margin:0;">PAMS</h2>
+        </div>
+        <p style="color:#64748b; font-size:0.9rem; margin-bottom:1.5rem;">
+            Create your account &mdash; activation required by admin
+        </p>
+
+        {% if messages %}
+          {% for msg in messages %}
+            <div class="alert alert-{{ msg.tags|default:'info' }} py-2 text-start" role="alert">
+                {{ msg }}
+            </div>
+          {% endfor %}
+        {% endif %}
+
+        {% if form.non_field_errors %}
+          <div class="alert alert-danger py-2 text-start">
+              {{ form.non_field_errors }}
+          </div>
+        {% endif %}
+
+        <form method="post" class="text-start">
+            {% csrf_token %}
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Username</label>
+                {{ form.username }}
+                {% if form.username.errors %}
+                  <div class="text-danger small mt-1">{{ form.username.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Password</label>
+                {{ form.password1 }}
+                {% if form.password1.errors %}
+                  <div class="text-danger small mt-1">{{ form.password1.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label fw-semibold">Confirm Password</label>
+                {{ form.password2 }}
+                {% if form.password2.errors %}
+                  <div class="text-danger small mt-1">{{ form.password2.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-success btn-register text-white">
+                    <i class="bi bi-person-plus me-1"></i> Create Account
+                </button>
+            </div>
+        </form>
+
+        <a href="{% url 'dashboard:login' %}" class="btn-back-link">
+            &larr; Back to Sign In
+        </a>
+    </div>
+</div>
+{% endblock %}

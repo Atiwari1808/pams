@@ -1,0 +1,2445 @@
+-bash: /home/lcmuser/Abhishek/pams_project_v3/bin/python: No such file or directory
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 15 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 410
+[ExpiryCheck] Nodes expiring within 15 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 15 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 410
+[ExpiryCheck] Nodes expiring within 15 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 416
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+2026-04-18 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 16 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 16 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 16 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 16 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 16 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 16 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 16 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 16 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 16 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 16 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 16 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 16 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 16 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 16 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 16 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 16 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 16 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 16 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 16 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 16 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 16 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 16 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 16 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 16 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 16 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 16 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 16 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 16 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 16 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 16 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 16 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 16 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 16 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 16 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 16 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 16 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 16 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 16 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 16 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 16 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-19 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 15 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 15 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 15 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 15 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 15 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 15 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 15 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 15 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 15 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 15 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 15 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 15 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 15 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 15 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 15 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 15 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 15 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 15 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 15 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 15 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 15 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 15 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 15 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 15 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 15 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 15 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 15 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 15 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 15 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 15 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 15 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 15 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 15 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 15 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 15 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 15 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 15 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 15 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 15 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 15 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-20 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 14 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 14 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 14 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 14 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 14 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 14 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 14 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 14 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 14 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 14 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 14 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 14 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 14 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 14 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 14 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 14 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 14 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 14 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 14 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 14 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 14 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 14 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 14 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 14 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 14 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 14 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 14 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 14 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 14 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 14 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 14 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 14 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 14 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 14 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 14 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 14 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 14 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 14 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 14 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 14 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-21 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 13 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 13 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 13 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 13 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 13 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 13 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 13 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 13 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 13 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 13 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 13 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 13 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 13 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 13 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 13 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 13 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 13 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 13 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 13 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 13 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 13 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 13 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 13 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 13 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 13 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 13 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 13 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 13 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 13 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 13 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 13 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 13 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 13 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 13 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 13 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 13 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 13 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 13 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 13 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 13 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-22 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 12 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 12 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 12 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 12 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 12 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 12 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 12 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 12 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 12 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 12 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 12 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 12 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 12 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 12 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 12 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 12 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 12 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 12 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 12 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 12 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 12 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 12 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 12 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 12 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 12 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 12 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 12 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 12 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 12 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 12 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 12 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 12 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 12 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 12 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 12 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 12 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 12 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 12 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 12 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 12 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-23 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 11 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 11 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 11 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 11 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 11 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 11 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 11 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 11 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 11 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 11 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 11 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 11 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 11 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 11 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 11 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 11 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 11 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 11 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 11 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 11 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 11 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 11 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 11 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 11 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 11 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 11 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 11 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 11 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 11 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 11 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 11 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 11 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 11 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 11 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 11 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 11 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 11 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 11 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 11 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 11 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-24 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 10 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 10 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 10 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 10 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 10 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 10 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 10 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 10 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 10 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 10 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 10 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 10 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 10 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 10 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 10 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 10 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 10 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 10 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 10 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 10 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 10 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 10 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 10 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 10 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 10 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 10 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 10 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 10 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 10 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 10 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 10 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 10 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 10 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 10 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 10 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 10 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 10 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 10 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 10 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 10 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-25 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 9 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 9 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 9 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 9 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 9 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 9 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 9 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 9 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 9 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 9 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 9 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 9 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 9 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 9 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 9 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 9 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 9 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 9 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 9 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 9 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 9 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 9 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 9 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 9 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 9 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 9 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 9 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 9 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 9 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 9 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 9 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 9 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 9 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 9 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 9 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 9 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 9 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 9 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 9 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 9 Days
+============================================================
+Done. Alert sent for 40 node(s).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 303
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 8 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 8 Days
+  * APBCL01 (10.105.205.165) — 12-05-2026 — Expiry in 16 Days
+  * APBCL01_1 (10.105.205.166) — 12-05-2026 — Expiry in 16 Days
+  * APBSHY3 (10.105.57.241) — 12-05-2026 — Expiry in 16 Days
+  * APBSHY3_1 (10.105.57.244) — 12-05-2026 — Expiry in 16 Days
+  * APBCHY1 (10.105.58.165) — 12-05-2026 — Expiry in 16 Days
+  * APBCHY1_1 (10.105.58.166) — 12-05-2026 — Expiry in 16 Days
+  * APBCHY2 (10.105.69.165) — 12-05-2026 — Expiry in 16 Days
+  * APBCHY2_1 (10.105.69.166) — 12-05-2026 — Expiry in 16 Days
+  * APBCWG1 (10.105.83.101) — 12-05-2026 — Expiry in 16 Days
+  * APBCWG1_1 (10.105.83.102) — 12-05-2026 — Expiry in 16 Days
+  * APBSWG2 (10.105.85.17) — 12-05-2026 — Expiry in 16 Days
+  * APBSWG2_1 (10.105.85.20) — 12-05-2026 — Expiry in 16 Days
+  * APBSVJ3 (10.106.13.241) — 12-05-2026 — Expiry in 16 Days
+  * APBCVJ2 (10.106.13.37) — 12-05-2026 — Expiry in 16 Days
+  * APBCVJ2_1 (10.106.13.38) — 12-05-2026 — Expiry in 16 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 8 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 8 Days
+  * APBSUP3 (10.106.48.177) — 12-05-2026 — Expiry in 16 Days
+  * APBSUP3_1 (10.106.48.180) — 12-05-2026 — Expiry in 16 Days
+  * APBSUP4 (10.106.51.241) — 12-05-2026 — Expiry in 16 Days
+  * APBSUP4_1 (10.106.51.244) — 12-05-2026 — Expiry in 16 Days
+  * APBSVJ4 (10.106.54.209) — 12-05-2026 — Expiry in 16 Days
+  * APBSVJ4_1 (10.106.54.212) — 12-05-2026 — Expiry in 16 Days
+  * APBSVJ6 (10.106.57.241) — 12-05-2026 — Expiry in 16 Days
+  * APBSVJ6_1 (10.106.57.244) — 12-05-2026 — Expiry in 16 Days
+  * APBSVJ5 (10.106.57.49) — 12-05-2026 — Expiry in 16 Days
+  * APBSVJ5_1 (10.106.57.52) — 12-05-2026 — Expiry in 16 Days
+  * APBSVJ7 (10.106.61.81) — 12-05-2026 — Expiry in 16 Days
+  * APBSVJ7_1 (10.106.61.84) — 12-05-2026 — Expiry in 16 Days
+  * APBCUP2 (10.106.7.165) — 12-05-2026 — Expiry in 16 Days
+  * APBCUP2_1 (10.106.7.166) — 12-05-2026 — Expiry in 16 Days
+  * APBGVJ1 (10.106.8.69) — 12-05-2026 — Expiry in 16 Days
+  * APBGVJ1_1 (10.106.8.70) — 12-05-2026 — Expiry in 16 Days
+  * APBCVJ1 (10.106.9.165) — 12-05-2026 — Expiry in 16 Days
+  * APBCVJ1_1 (10.106.9.166) — 12-05-2026 — Expiry in 16 Days
+  * CSNG1S1 (10.111.202.17) — 12-05-2026 — Expiry in 16 Days
+  * CHSNS02 (10.111.202.21) — 12-05-2026 — Expiry in 16 Days
+  * TNMRS02 (10.111.203.149) — 12-05-2026 — Expiry in 16 Days
+  * TNKNS02 (10.111.203.45) — 12-05-2026 — Expiry in 16 Days
+  * CSNBC01 (10.111.206.5) — 12-05-2026 — Expiry in 16 Days
+  * CSNBC01_1 (10.111.206.6) — 12-05-2026 — Expiry in 16 Days
+  * TKNBC01 (10.111.209.229) — 12-05-2026 — Expiry in 16 Days
+  * TKNBC01_1 (10.111.209.230) — 12-05-2026 — Expiry in 16 Days
+  * TNPOS05 (10.111.209.73) — 12-05-2026 — Expiry in 16 Days
+  * CSRBC01 (10.111.76.197) — 12-05-2026 — Expiry in 16 Days
+  * CSRBC01_1 (10.111.76.198) — 12-05-2026 — Expiry in 16 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 8 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 8 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 8 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 8 Days
+  * CSRBC02 (10.113.53.113) — 12-05-2026 — Expiry in 16 Days
+  * CSRBC02_1 (10.113.53.116) — 12-05-2026 — Expiry in 16 Days
+  * TCBBC02 (10.113.72.81) — 12-05-2026 — Expiry in 16 Days
+  * TCBBC02_1 (10.113.72.84) — 12-05-2026 — Expiry in 16 Days
+  * KCLBC02 (10.113.9.209) — 12-05-2026 — Expiry in 16 Days
+  * KCLBC02_1 (10.113.9.212) — 12-05-2026 — Expiry in 16 Days
+  * TPOBC01 (10.116.209.17) — 12-05-2026 — Expiry in 16 Days
+  * TPOBC01_1 (10.116.209.20) — 12-05-2026 — Expiry in 16 Days
+  * TMDBC02 (10.121.26.113) — 12-05-2026 — Expiry in 16 Days
+  * TMDBC02_1 (10.121.26.116) — 12-05-2026 — Expiry in 16 Days
+  * TMDBC01 (10.121.26.81) — 12-05-2026 — Expiry in 16 Days
+  * TMDBC01_1 (10.121.26.84) — 12-05-2026 — Expiry in 16 Days
+  * TSLBC01 (10.121.35.241) — 12-05-2026 — Expiry in 16 Days
+  * TSLBC01_1 (10.121.35.244) — 12-05-2026 — Expiry in 16 Days
+  * TSLBC03 (10.121.36.241) — 12-05-2026 — Expiry in 16 Days
+  * TSLBC03_1 (10.121.36.244) — 12-05-2026 — Expiry in 16 Days
+  * TSLBC02 (10.121.36.81) — 12-05-2026 — Expiry in 16 Days
+  * TSLBC02_1 (10.121.36.84) — 12-05-2026 — Expiry in 16 Days
+  * TCBBC01 (10.121.7.209) — 12-05-2026 — Expiry in 16 Days
+  * TCBBC01_1 (10.121.7.212) — 12-05-2026 — Expiry in 16 Days
+  * KCLBC03 (10.127.25.17) — 12-05-2026 — Expiry in 16 Days
+  * KCLBC03_1 (10.127.25.20) — 12-05-2026 — Expiry in 16 Days
+  * KCLBC01 (10.127.33.197) — 12-05-2026 — Expiry in 16 Days
+  * KCLBC01_1 (10.127.33.198) — 12-05-2026 — Expiry in 16 Days
+  * KCLG1B1 (10.127.36.197) — 12-05-2026 — Expiry in 16 Days
+  * KCLG1B1_1 (10.127.36.198) — 12-05-2026 — Expiry in 16 Days
+  * KEKBC01 (10.127.6.69) — 12-05-2026 — Expiry in 16 Days
+  * KEKBC01_1 (10.127.6.70) — 12-05-2026 — Expiry in 16 Days
+  * KEKBC02 (10.127.7.101) — 12-05-2026 — Expiry in 16 Days
+  * KEKBC02_1 (10.127.7.102) — 12-05-2026 — Expiry in 16 Days
+  * GHBC02 (10.142.19.113) — 12-05-2026 — Expiry in 16 Days
+  * GHBC02_1 (10.142.19.116) — 12-05-2026 — Expiry in 16 Days
+  * JHBC01 (10.142.25.133) — 12-05-2026 — Expiry in 16 Days
+  * JHBC01_1 (10.142.25.134) — 12-05-2026 — Expiry in 16 Days
+  * SHBC02 (10.142.39.177) — 12-05-2026 — Expiry in 16 Days
+  * SHBC02_1 (10.142.39.180) — 12-05-2026 — Expiry in 16 Days
+  * SHBSP2 (10.142.48.81) — 12-05-2026 — Expiry in 16 Days
+  * SHBSP2_1 (10.142.48.84) — 12-05-2026 — Expiry in 16 Days
+  * GHBC01 (10.142.6.197) — 12-05-2026 — Expiry in 16 Days
+  * GHBC01_1 (10.142.6.198) — 12-05-2026 — Expiry in 16 Days
+  * JHBSP1 (10.142.85.49) — 12-05-2026 — Expiry in 16 Days
+  * JHBSP1_1 (10.142.85.52) — 12-05-2026 — Expiry in 16 Days
+  * GHBSP2 (10.142.95.113) — 12-05-2026 — Expiry in 16 Days
+  * GHBSP2_1 (10.142.95.116) — 12-05-2026 — Expiry in 16 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 8 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 8 Days
+  * HRBCSA2 (10.19.42.17) — 12-05-2026 — Expiry in 16 Days
+  * HRBCSA2_1 (10.19.42.20) — 12-05-2026 — Expiry in 16 Days
+  * HPBCMH3 (10.19.50.81) — 12-05-2026 — Expiry in 16 Days
+  * HPBCMH3_1 (10.19.50.84) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ03 (10.19.59.129) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ03_1 (10.19.59.132) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ04 (10.19.61.145) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ04_1 (10.19.61.148) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ06 (10.19.75.113) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ06_1 (10.19.75.116) — 12-05-2026 — Expiry in 16 Days
+  * DLGMSS1 (10.2.203.26) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL04 (10.2.204.133) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL04_1 (10.2.204.134) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL03 (10.2.204.165) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL03_1 (10.2.204.166) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL10 (10.2.63.17) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL10_1 (10.2.63.20) — 12-05-2026 — Expiry in 16 Days
+  * PBSLD02 (10.20.202.149) — 12-05-2026 — Expiry in 16 Days
+  * PBSMH03 (10.20.202.203) — 12-05-2026 — Expiry in 16 Days
+  * PBSJL03 (10.20.202.83) — 12-05-2026 — Expiry in 16 Days
+  * PBBCL01 (10.20.203.165) — 12-05-2026 — Expiry in 16 Days
+  * PBBCL01_1 (10.20.203.166) — 12-05-2026 — Expiry in 16 Days
+  * PBBCJL1 (10.20.47.101) — 12-05-2026 — Expiry in 16 Days
+  * PBBCJL1_1 (10.20.47.102) — 12-05-2026 — Expiry in 16 Days
+  * PBGBCM1 (10.20.51.101) — 12-05-2026 — Expiry in 16 Days
+  * PBGBCM1_1 (10.20.51.102) — 12-05-2026 — Expiry in 16 Days
+  * PBBCLD2 (10.20.65.209) — 12-05-2026 — Expiry in 16 Days
+  * PBBCLD2_1 (10.20.65.212) — 12-05-2026 — Expiry in 16 Days
+  * PBBCLD1 (10.20.65.49) — 12-05-2026 — Expiry in 16 Days
+  * PBBCMH2 (10.20.71.17) — 12-05-2026 — Expiry in 16 Days
+  * PBBCJL2 (10.20.77.209) — 12-05-2026 — Expiry in 16 Days
+  * PBBCJL2_1 (10.20.77.212) — 12-05-2026 — Expiry in 16 Days
+  * PBBCJL3 (10.20.78.209) — 12-05-2026 — Expiry in 16 Days
+  * PBBCJL3_1 (10.20.78.212) — 12-05-2026 — Expiry in 16 Days
+  * HRBCSA1 (10.25.23.101) — 12-05-2026 — Expiry in 16 Days
+  * HRBCSA1_1 (10.25.23.102) — 12-05-2026 — Expiry in 16 Days
+  * JKBCJM2 (10.28.18.17) — 12-05-2026 — Expiry in 16 Days
+  * JKBCJM2_1 (10.28.18.20) — 12-05-2026 — Expiry in 16 Days
+  * JKBCJM3 (10.28.18.81) — 12-05-2026 — Expiry in 16 Days
+  * JKBCJM3_1 (10.28.18.84) — 12-05-2026 — Expiry in 16 Days
+  * JKBCSR1 (10.28.203.5) — 12-05-2026 — Expiry in 16 Days
+  * JKBCSR1_1 (10.28.203.6) — 12-05-2026 — Expiry in 16 Days
+  * JKBCSR2 (10.28.27.81) — 12-05-2026 — Expiry in 16 Days
+  * JKBCSR2_1 (10.28.27.84) — 12-05-2026 — Expiry in 16 Days
+  * JKBCJM1 (10.28.5.101) — 12-05-2026 — Expiry in 16 Days
+  * JKBCJM1_1 (10.28.5.102) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL01 (10.3.102.101) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL01_1 (10.3.102.102) — 12-05-2026 — Expiry in 16 Days
+  * HRBCL01 (10.3.119.5) — 12-05-2026 — Expiry in 16 Days
+  * HRBCL01_1 (10.3.119.6) — 12-05-2026 — Expiry in 16 Days
+  * HRBCL02 (10.3.125.241) — 12-05-2026 — Expiry in 16 Days
+  * HRBCL02_1 (10.3.125.244) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL11 (10.3.180.81) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL11_1 (10.3.180.84) — 12-05-2026 — Expiry in 16 Days
+  * DLGMSS3 (10.3.19.133) — 12-05-2026 — Expiry in 16 Days
+  * DLGMSS3_1 (10.3.19.134) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL05 (10.3.19.165) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL05_1 (10.3.19.166) — 12-05-2026 — Expiry in 16 Days
+  * DLGMSS2 (10.3.30.197) — 12-05-2026 — Expiry in 16 Days
+  * DLGMSS2_1 (10.3.30.198) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL07 (10.3.32.69) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL07_1 (10.3.32.70) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL06 (10.3.53.101) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL06_1 (10.3.53.102) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL08 (10.3.61.113) — 12-05-2026 — Expiry in 16 Days
+  * DLBCL08_1 (10.3.61.116) — 12-05-2026 — Expiry in 16 Days
+  * UWSMR07 (10.31.202.104) — 12-05-2026 — Expiry in 16 Days
+  * UWSDN04 (10.31.202.221) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL01 (10.31.37.101) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL01_1 (10.31.37.102) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL04 (10.31.46.209) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL04_1 (10.31.46.212) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL06 (10.31.47.81) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL06_1 (10.31.47.84) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL02 (10.31.6.209) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL02_1 (10.31.6.212) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL03 (10.31.8.17) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL03_1 (10.31.8.20) — 12-05-2026 — Expiry in 16 Days
+  * UESKN06 (10.34.202.14) — 12-05-2026 — Expiry in 16 Days
+  * UESKN07 (10.34.202.19) — 12-05-2026 — Expiry in 16 Days
+  * UESGJ13 (10.34.203.104) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL01 (10.34.204.133) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL01_1 (10.34.204.134) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL05 (10.34.25.209) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL11 (10.34.31.145) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL11_1 (10.34.31.148) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL17 (10.34.32.145) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL17_1 (10.34.32.148) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL03 (10.34.64.229) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL03_1 (10.34.64.230) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL08 (10.34.65.177) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL08_1 (10.34.65.180) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL14 (10.34.66.113) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL14_1 (10.34.66.116) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL04 (10.34.70.69) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL04_1 (10.34.70.70) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL09 (10.34.74.241) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL09_1 (10.34.74.244) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL12 (10.34.76.209) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL12_1 (10.34.76.212) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL13 (10.34.77.145) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL13_1 (10.34.77.148) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL16 (10.34.78.49) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL16_1 (10.34.78.52) — 12-05-2026 — Expiry in 16 Days
+  * UESGN01 (10.34.86.139) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL02 (10.34.90.5) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL02_1 (10.34.90.6) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL06 (10.34.92.241) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL07 (10.34.93.113) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL07_1 (10.34.93.116) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL05 (10.35.29.113) — 12-05-2026 — Expiry in 16 Days
+  * UWBCL05_1 (10.35.29.116) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL10 (10.35.33.17) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL10_1 (10.35.33.20) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL15 (10.35.39.113) — 12-05-2026 — Expiry in 16 Days
+  * UEBCL15_1 (10.35.39.116) — 12-05-2026 — Expiry in 16 Days
+  * RJBCL04 (10.35.48.113) — 12-05-2026 — Expiry in 16 Days
+  * RJBCL04_1 (10.35.48.116) — 12-05-2026 — Expiry in 16 Days
+  * HPSSM02 (10.41.202.73) — 12-05-2026 — Expiry in 16 Days
+  * HPBCMH1 (10.41.25.37) — 12-05-2026 — Expiry in 16 Days
+  * HPBCMH1_1 (10.41.25.38) — 12-05-2026 — Expiry in 16 Days
+  * HPBCMH2 (10.41.29.241) — 12-05-2026 — Expiry in 16 Days
+  * HPBCMH2_1 (10.41.29.244) — 12-05-2026 — Expiry in 16 Days
+  * RJBCL01 (10.45.205.101) — 12-05-2026 — Expiry in 16 Days
+  * RJBCL01_1 (10.45.205.102) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ01 (10.45.22.5) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ01_1 (10.45.22.6) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ02 (10.45.28.113) — 12-05-2026 — Expiry in 16 Days
+  * RJBCJ02_1 (10.45.28.116) — 12-05-2026 — Expiry in 16 Days
+  * RJBCL02 (10.45.77.209) — 12-05-2026 — Expiry in 16 Days
+  * RJBCL02_1 (10.45.77.212) — 12-05-2026 — Expiry in 16 Days
+  * RJBCL03 (10.45.78.241) — 12-05-2026 — Expiry in 16 Days
+  * RJBCL03_1 (10.45.78.244) — 12-05-2026 — Expiry in 16 Days
+  * RJBCU01 (10.45.84.37) — 12-05-2026 — Expiry in 16 Days
+  * RJBCU01_1 (10.45.84.38) — 12-05-2026 — Expiry in 16 Days
+  * RJBCU02 (10.45.88.145) — 12-05-2026 — Expiry in 16 Days
+  * RJBCU02_1 (10.45.88.148) — 12-05-2026 — Expiry in 16 Days
+  * RJBCU03 (10.45.88.209) — 12-05-2026 — Expiry in 16 Days
+  * RJBCU03_1 (10.45.88.212) — 12-05-2026 — Expiry in 16 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 8 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 8 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 8 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 8 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 8 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 8 Days
+  * KKBCL05 (10.89.10.101) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL05_1 (10.89.10.102) — 12-05-2026 — Expiry in 16 Days
+2026-04-26 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+  * KKSBG11 (10.89.204.43) — 12-05-2026 — Expiry in 16 Days
+  * KKBBL01 (10.89.206.37) — 12-05-2026 — Expiry in 16 Days
+  * KKBBL01_1 (10.89.206.38) — 12-05-2026 — Expiry in 16 Days
+  * KKSBG10 (10.89.206.70) — 12-05-2026 — Expiry in 16 Days
+  * KKBBL02 (10.89.209.5) — 12-05-2026 — Expiry in 16 Days
+  * KKBBL02_1 (10.89.209.6) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL06 (10.89.27.69) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL06_1 (10.89.27.70) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL08 (10.89.28.5) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL08_1 (10.89.28.6) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL51 (10.89.56.69) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL51_1 (10.89.56.70) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL12 (10.89.57.113) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL12_1 (10.89.57.116) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL11 (10.89.57.81) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL11_1 (10.89.57.84) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL16 (10.89.58.177) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL16_1 (10.89.58.180) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL15 (10.89.58.49) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL15_1 (10.89.58.52) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL13 (10.90.249.241) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL13_1 (10.90.249.244) — 12-05-2026 — Expiry in 16 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 8 Days
+  * KKBML01 (10.91.18.69) — 12-05-2026 — Expiry in 16 Days
+  * KKBML01_1 (10.91.18.70) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL10 (10.91.23.113) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL10_1 (10.91.23.116) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL09 (10.91.37.209) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL09_1 (10.91.37.212) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL07 (10.91.37.69) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL07_1 (10.91.37.70) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL14 (10.91.48.113) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL14_1 (10.91.48.116) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL04 (10.91.8.101) — 12-05-2026 — Expiry in 16 Days
+  * KKBCL04_1 (10.91.8.102) — 12-05-2026 — Expiry in 16 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 8 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 8 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 8 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 8 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 8 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 8 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 8 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 8 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 8 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 8 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 8 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 8 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 8 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 8 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 8 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 8 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 8 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 8 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 8 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 8 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 8 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 8 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 8 Days
+============================================================
+Done. Alert sent for 303 node(s).
+2026-04-27 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 7 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 7 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 7 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 7 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 7 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 7 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 7 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 7 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 7 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 7 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 7 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 7 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 7 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 7 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 7 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 7 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 7 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 7 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 7 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 7 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 7 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 7 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 7 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 7 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 7 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 7 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 7 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 7 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 7 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 7 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 7 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 7 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 7 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 7 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 7 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 7 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 7 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 7 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 7 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 7 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-28 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 6 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 6 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 6 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 6 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 6 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 6 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 6 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 6 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 6 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 6 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 6 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 6 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 6 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 6 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 6 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 6 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 6 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 6 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 6 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 6 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 6 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 6 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 6 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 6 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 6 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 6 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 6 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 6 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 6 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 6 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 6 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 6 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 6 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 6 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 6 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 6 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 6 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 6 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 6 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 6 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-29 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 5 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 5 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 5 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 5 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 5 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 5 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 5 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 5 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 5 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 5 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 5 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 5 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 5 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 5 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 5 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 5 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 5 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 5 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 5 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 5 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 5 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 5 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 5 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 5 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 5 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 5 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 5 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 5 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 5 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 5 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 5 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 5 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 5 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 5 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 5 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 5 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 5 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 5 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 5 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 5 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-04-30 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 04-05-2026 — Expiry in 4 Days
+  * ASGHERIDNS01 (10.102.221.174) — 04-05-2026 — Expiry in 4 Days
+  * APVIJEDNS03 (10.106.139.190) — 04-05-2026 — Expiry in 4 Days
+  * APUPPEDNS01 (10.106.144.190) — 04-05-2026 — Expiry in 4 Days
+  * TNPOLEDNS01 (10.113.122.190) — 04-05-2026 — Expiry in 4 Days
+  * TNSIREDNS03 (10.113.124.190) — 04-05-2026 — Expiry in 4 Days
+  * CHNSIREDNS01 (10.113.135.246) — 04-05-2026 — Expiry in 4 Days
+  * CHNSIREDNS03 (10.113.157.150) — 04-05-2026 — Expiry in 4 Days
+  * HPMOHEDNS01 (10.19.171.97) — 04-05-2026 — Expiry in 4 Days
+  * HPLUDEDNS03 (10.19.174.97) — 04-05-2026 — Expiry in 4 Days
+  * MPBHPEDNS01 (10.55.157.230) — 04-05-2026 — Expiry in 4 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 04-05-2026 — Expiry in 4 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 04-05-2026 — Expiry in 4 Days
+  * MPRPREDNS03 (10.55.209.230) — 04-05-2026 — Expiry in 4 Days
+  * DELEDNS01 (10.58.96.164) — 04-05-2026 — Expiry in 4 Days
+  * DELEDNS02 (10.58.96.172) — 04-05-2026 — Expiry in 4 Days
+  * KKWHIEDNS01 (10.91.128.142) — 04-05-2026 — Expiry in 4 Days
+  * BIHPATEDNS01 (10.99.5.230) — 04-05-2026 — Expiry in 4 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 04-05-2026 — Expiry in 4 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 04-05-2026 — Expiry in 4 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 04-05-2026 — Expiry in 4 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 04-05-2026 — Expiry in 4 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 04-05-2026 — Expiry in 4 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 04-05-2026 — Expiry in 4 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 04-05-2026 — Expiry in 4 Days
+  * DELMANEDNS01 (172.25.26.22) — 04-05-2026 — Expiry in 4 Days
+  * ASGHERIDNS03 (172.27.196.14) — 04-05-2026 — Expiry in 4 Days
+  * WBKGPEDNS03 (172.27.40.6) — 04-05-2026 — Expiry in 4 Days
+  * WBKOLEDNS01 (172.27.45.30) — 04-05-2026 — Expiry in 4 Days
+  * KKMANEDNS03 (172.31.40.14) — 04-05-2026 — Expiry in 4 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 04-05-2026 — Expiry in 4 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 04-05-2026 — Expiry in 4 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 04-05-2026 — Expiry in 4 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 04-05-2026 — Expiry in 4 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 04-05-2026 — Expiry in 4 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 04-05-2026 — Expiry in 4 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 04-05-2026 — Expiry in 4 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 04-05-2026 — Expiry in 4 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 04-05-2026 — Expiry in 4 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 04-05-2026 — Expiry in 4 Days
+============================================================
+Done. Alert sent for 40 node(s).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+2026-05-14 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 16 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 16 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 16 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 16 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 16 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 16 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-15 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 15 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 15 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 15 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 15 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 15 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 15 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-16 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 14 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 14 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 14 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 14 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 14 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 14 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-17 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 13 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 13 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 13 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 13 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 13 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 13 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-18 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 12 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 12 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 12 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 12 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 12 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 12 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-19 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 11 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 11 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 11 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 11 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 11 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 11 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-20 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 10 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 10 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 10 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 10 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 10 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 10 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-21 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 9 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 9 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 9 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 9 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 9 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 9 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-22 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 679
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 8 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 8 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 8 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 8 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 8 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 8 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-23 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 735
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 7 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 7 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 7 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 7 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 7 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 7 Days
+============================================================
+Done. Alert sent for 6 node(s).
+2026-05-24 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 735
+[ExpiryCheck] Nodes expiring within 16 days : 6
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 6 Days
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 30-05-2026 — Expiry in 6 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 6 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 30-05-2026 — Expiry in 6 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 6 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 30-05-2026 — Expiry in 6 Days
+============================================================
+Done. Alert sent for 6 node(s).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+2026-05-27 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 16 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 16 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 16 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 16 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 16 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 16 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 16 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 16 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 16 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 16 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 16 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 16 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 16 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 16 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 16 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 16 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 16 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 16 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 16 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 16 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 16 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 16 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 16 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 16 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 16 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 16 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 16 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 16 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 16 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 16 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 16 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 16 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 16 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 16 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 16 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 16 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 16 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 16 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 16 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 16 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-05-28 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 15 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 15 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 15 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 15 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 15 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 15 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 15 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 15 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 15 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 15 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 15 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 15 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 15 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 15 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 15 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 15 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 15 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 15 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 15 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 15 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 15 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 15 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 15 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 15 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 15 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 15 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 15 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 15 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 15 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 15 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 15 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 15 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 15 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 15 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 15 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 15 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 15 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 15 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 15 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 15 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-05-29 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 14 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 14 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 14 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 14 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 14 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 14 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 14 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 14 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 14 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 14 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 14 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 14 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 14 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 14 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 14 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 14 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 14 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 14 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 14 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 14 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 14 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 14 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 14 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 14 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 14 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 14 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 14 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 14 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 14 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 14 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 14 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 14 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 14 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 14 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 14 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 14 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 14 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 14 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 14 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 14 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-05-30 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 13 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 13 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 13 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 13 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 13 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 13 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 13 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 13 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 13 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 13 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 13 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 13 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 13 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 13 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 13 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 13 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 13 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 13 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 13 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 13 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 13 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 13 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 13 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 13 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 13 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 13 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 13 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 13 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 13 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 13 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 13 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 13 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 13 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 13 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 13 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 13 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 13 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 13 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 13 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 13 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-05-31 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 12 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 12 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 12 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 12 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 12 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 12 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 12 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 12 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 12 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 12 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 12 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 12 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 12 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 12 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 12 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 12 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 12 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 12 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 12 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 12 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 12 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 12 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 12 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 12 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 12 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 12 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 12 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 12 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 12 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 12 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 12 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 12 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 12 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 12 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 12 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 12 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 12 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 12 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 12 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 12 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-06-01 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 11 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 11 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 11 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 11 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 11 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 11 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 11 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 11 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 11 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 11 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 11 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 11 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 11 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 11 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 11 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 11 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 11 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 11 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 11 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 11 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 11 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 11 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 11 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 11 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 11 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 11 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 11 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 11 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 11 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 11 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 11 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 11 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 11 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 11 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 11 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 11 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 11 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 11 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 11 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 11 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-06-02 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 10 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 10 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 10 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 10 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 10 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 10 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 10 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 10 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 10 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 10 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 10 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 10 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 10 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 10 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 10 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 10 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 10 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 10 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 10 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 10 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 10 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 10 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 10 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 10 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 10 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 10 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 10 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 10 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 10 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 10 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 10 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 10 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 10 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 10 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 10 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 10 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 10 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 10 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 10 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 10 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-06-03 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 9 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 9 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 9 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 9 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 9 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 9 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 9 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 9 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 9 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 9 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 9 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 9 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 9 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 9 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 9 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 9 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 9 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 9 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 9 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 9 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 9 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 9 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 9 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 9 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 9 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 9 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 9 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 9 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 9 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 9 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 9 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 9 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 9 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 9 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 9 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 9 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 9 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 9 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 9 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 9 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-06-04 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 732
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 8 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 8 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 8 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 8 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 8 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 8 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 8 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 8 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 8 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 8 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 8 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 8 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 8 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 8 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 8 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 8 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 8 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 8 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 8 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 8 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 8 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 8 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 8 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 8 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 8 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 8 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 8 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 8 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 8 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 8 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 8 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 8 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 8 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 8 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 8 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 8 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 8 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 8 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 8 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 8 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-06-05 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 791
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 7 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 7 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 7 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 7 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 7 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 7 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 7 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 7 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 7 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 7 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 7 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 7 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 7 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 7 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 7 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 7 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 7 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 7 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 7 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 7 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 7 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 7 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 7 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 7 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 7 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 7 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 7 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 7 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 7 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 7 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 7 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 7 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 7 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 7 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 7 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 7 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 7 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 7 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 7 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 7 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-06-06 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 791
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 6 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 6 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 6 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 6 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 6 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 6 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 6 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 6 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 6 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 6 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 6 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 6 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 6 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 6 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 6 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 6 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 6 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 6 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 6 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 6 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 6 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 6 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 6 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 6 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 6 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 6 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 6 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 6 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 6 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 6 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 6 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 6 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 6 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 6 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 6 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 6 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 6 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 6 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 6 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 6 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-06-07 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 791
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 5 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 5 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 5 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 5 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 5 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 5 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 5 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 5 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 5 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 5 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 5 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 5 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 5 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 5 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 5 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 5 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 5 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 5 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 5 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 5 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 5 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 5 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 5 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 5 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 5 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 5 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 5 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 5 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 5 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 5 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 5 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 5 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 5 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 5 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 5 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 5 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 5 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 5 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 5 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 5 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-06-08 08:00:01 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 791
+[ExpiryCheck] Nodes expiring within 16 days : 40
+  * ROBSILEDNS01 (10.102.179.14) — 12-06-2026 — Expiry in 4 Days
+  * ASGHERIDNS01 (10.102.221.174) — 12-06-2026 — Expiry in 4 Days
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 4 Days
+  * APUPPEDNS01 (10.106.144.190) — 12-06-2026 — Expiry in 4 Days
+  * TNPOLEDNS01 (10.113.122.190) — 12-06-2026 — Expiry in 4 Days
+  * TNSIREDNS03 (10.113.124.190) — 12-06-2026 — Expiry in 4 Days
+  * CHNSIREDNS01 (10.113.135.246) — 12-06-2026 — Expiry in 4 Days
+  * CHNSIREDNS03 (10.113.157.150) — 12-06-2026 — Expiry in 4 Days
+  * HPMOHEDNS01 (10.19.171.97) — 12-06-2026 — Expiry in 4 Days
+  * HPLUDEDNS03 (10.19.174.97) — 12-06-2026 — Expiry in 4 Days
+  * MPBHPEDNS01 (10.55.157.230) — 12-06-2026 — Expiry in 4 Days
+  * MAHNAGEDNS01 (10.55.183.190) — 12-06-2026 — Expiry in 4 Days
+  * MAHPUNEDNS03 (10.55.205.190) — 12-06-2026 — Expiry in 4 Days
+  * MPRPREDNS03 (10.55.209.230) — 12-06-2026 — Expiry in 4 Days
+  * DELEDNS01 (10.58.96.164) — 12-06-2026 — Expiry in 4 Days
+  * DELEDNS02 (10.58.96.172) — 12-06-2026 — Expiry in 4 Days
+  * KKWHIEDNS01 (10.91.128.142) — 12-06-2026 — Expiry in 4 Days
+  * BIHPATEDNS01 (10.99.5.230) — 12-06-2026 — Expiry in 4 Days
+  * BIHBGPEDNS03 (10.99.57.230) — 12-06-2026 — Expiry in 4 Days
+  * ROBKGPEDNS03 (10.99.86.150) — 12-06-2026 — Expiry in 4 Days
+  * GUJRAJEDNS01 (172.24.16.22) — 12-06-2026 — Expiry in 4 Days
+  * MUMCHAEDNS01 (172.24.40.6) — 12-06-2026 — Expiry in 4 Days
+  * MUMSPEEDNS03 (172.24.48.6) — 12-06-2026 — Expiry in 4 Days
+  * GUJCHAEDNS03 (172.24.8.6) — 12-06-2026 — Expiry in 4 Days
+  * DELNOI81EDNS03 (172.25.2.54) — 12-06-2026 — Expiry in 4 Days
+  * DELMANEDNS01 (172.25.26.22) — 12-06-2026 — Expiry in 4 Days
+  * ASGHERIDNS03 (172.27.196.14) — 12-06-2026 — Expiry in 4 Days
+  * WBKGPEDNS03 (172.27.40.6) — 12-06-2026 — Expiry in 4 Days
+  * WBKOLEDNS01 (172.27.45.30) — 12-06-2026 — Expiry in 4 Days
+  * KKMANEDNS03 (172.31.40.14) — 12-06-2026 — Expiry in 4 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 4 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 4 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 4 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 4 Days
+  * ASJORERIDNS05 (2401:4900:57:100::ac6) — 12-06-2026 — Expiry in 4 Days
+  * NEGUWERIDNS03 (2401:4900:57::c9e) — 12-06-2026 — Expiry in 4 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 4 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 4 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 4 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 4 Days
+============================================================
+Done. Alert sent for 40 node(s).
+2026-06-09 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 791
+[ExpiryCheck] Nodes expiring within 16 days : 9
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 3 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 3 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 3 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 3 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 3 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 3 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 3 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 3 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 3 Days
+============================================================
+Done. Alert sent for 9 node(s).
+2026-06-10 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 791
+[ExpiryCheck] Nodes expiring within 16 days : 9
+  * APVIJEDNS03 (10.106.139.190) — 12-06-2026 — Expiry in 2 Days
+  * DELMANEDNS05 (2401:4900:24:400::aad6) — 12-06-2026 — Expiry in 2 Days
+  * BIHRANEDNS05 (2401:4900:54:1100::36e) — 12-06-2026 — Expiry in 2 Days
+  * ROBKGPEDNS05 (2401:4900:54:f00::fde) — 12-06-2026 — Expiry in 2 Days
+  * NEJORERIDNS01 (2401:4900:57:100::956) — 12-06-2026 — Expiry in 2 Days
+  * MPGVPEDNS05 (2401:4900:90:1000::9b6) — 12-06-2026 — Expiry in 2 Days
+  * MAHKHAEDNS05 (2401:4900:90:900::156e) — 12-06-2026 — Expiry in 2 Days
+  * APUPLEDNS05 (2401:4900:d4:1600::cde) — 12-06-2026 — Expiry in 2 Days
+  * TNSIREDNS05 (2401:4900:d4:a00::143e) — 12-06-2026 — Expiry in 2 Days
+============================================================
+Done. Alert sent for 9 node(s).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1903
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+2026-06-12 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1918
+[ExpiryCheck] Nodes expiring within 16 days : 1
+  * Bharti-India-Huawei-PSCORE-U2020-MAH1 (10.55.167.85) — 24-06-2026 — Expiry in 12 Days
+============================================================
+Done. Alert sent for 1 node(s).
+2026-06-13 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1918
+[ExpiryCheck] Nodes expiring within 16 days : 1
+  * Bharti-India-Huawei-PSCORE-U2020-MAH1 (10.55.167.85) — 24-06-2026 — Expiry in 11 Days
+============================================================
+Done. Alert sent for 1 node(s).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1918
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1918
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1918
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1918
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1918
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1918
+[ExpiryCheck] Nodes expiring within 16 days : 0
+Done. No nodes expiring soon.
+2026-06-20 08:00:02 [INFO] [ExpiryCheck] Email sent via Django SMTP to ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : ['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'satyender.sharma@ericsson.com', 'prashant.f.singh@ericsson.com', 'heena.h.goel@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com']
+[ExpiryCheck] Active nodes in DB : 1918
+[ExpiryCheck] Nodes expiring within 16 days : 3
+  * Bharti-India-Ericsson-JKHR3 (10.19.85.68) — 06-07-2026 — Expiry in 16 Days
+  * Bharti-India-Ericsson-UPWest2 (10.31.55.196) — 06-07-2026 — Expiry in 16 Days
+  * Bharti-India-Ericsson-UPEast1 (10.34.29.51) — 06-07-2026 — Expiry in 16 Days
+============================================================
+Done. Alert sent for 3 node(s).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Alert threshold : 16 days
+[ExpiryCheck] Recipients      : []
+[ExpiryCheck] No recipients configured — aborting.
+2026-06-22 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 3 node-email(s).
+2026-06-23 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 3 node-email(s).
+2026-06-24 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 3 node-email(s).
+2026-06-25 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 3 node-email(s).
+2026-06-26 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 3 node-email(s).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+2026-07-03 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 1 node-email(s).
+2026-07-04 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 1 node-email(s).
+2026-07-05 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 1 node-email(s).
+2026-07-06 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 1 node-email(s).
+2026-07-07 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 40 node-email(s).
+2026-07-08 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 40 node-email(s).
+2026-07-09 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 40 node-email(s).
+2026-07-10 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1921
+============================================================
+Done. Alert dispatched for 40 node-email(s).
+2026-07-11 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Alert dispatched for 40 node-email(s).
+2026-07-12 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Alert dispatched for 40 node-email(s).
+2026-07-13 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Alert dispatched for 40 node-email(s).
+2026-07-14 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Alert dispatched for 40 node-email(s).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Nothing sent (no nodes within threshold, or no recipients configured).
+2026-07-20 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1923
+============================================================
+Done. Alert dispatched for 414 node-email(s).
+2026-07-21 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1940
+============================================================
+Done. Alert dispatched for 414 node-email(s).
+2026-07-22 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1940
+============================================================
+Done. Alert dispatched for 414 node-email(s).
+2026-07-23 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 506 node-email(s).
+2026-07-24 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 506 node-email(s).
+2026-07-25 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 512 node-email(s).
+2026-07-26 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 512 node-email(s).
+2026-07-27 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 512 node-email(s).
+2026-07-28 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 512 node-email(s).
+2026-07-29 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 512 node-email(s).
+2026-07-30 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 512 node-email(s).
+2026-07-31 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 672 node-email(s).
+2026-08-01 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 672 node-email(s).
+2026-08-02 10:00:02 [INFO] Expiry alert sent — to=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] cc=['ashish.chandel@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com'] bcc=['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com']
+2026-08-02 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 1086 node-email(s).
+2026-08-03 10:00:02 [INFO] Expiry alert sent — to=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] cc=['ashish.chandel@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com'] bcc=['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com']
+2026-08-03 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 1086 node-email(s).
+2026-08-04 10:00:01 [INFO] Expiry alert sent — to=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] cc=['ashish.chandel@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com'] bcc=['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com']
+2026-08-04 10:00:01 [INFO] Expiry alert sent — to=['ashish.chandel@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com'] bcc=['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com']
+2026-08-04 10:00:01 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 1499 node-email(s).
+2026-08-05 10:00:02 [INFO] Expiry alert sent — to=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] cc=['ashish.chandel@ericsson.com', 'PDLATLCMSU@pdl.internal.ericsson.com'] bcc=['vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com']
+2026-08-05 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 608 node-email(s).
+2026-08-06 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1996
+============================================================
+Done. Alert dispatched for 580 node-email(s).
+2026-08-07 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1992
+============================================================
+Done. Alert dispatched for 389 node-email(s).
+2026-08-08 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1992
+============================================================
+Done. Alert dispatched for 281 node-email(s).
+2026-08-09 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1992
+============================================================
+Done. Alert dispatched for 281 node-email(s).
+2026-08-10 10:00:02 [INFO] Expiry alert sent — to=['PDLATLCMSU@pdl.internal.ericsson.com', 'prashant.f.singh@ericsson.com', 'vaishali.saini@ericsson.com', 'abhishek.a.tiwari@ericsson.com', 'prashant.tiwari@ericsson.com', 'deepanshu.khanduri.khanduri@ericsson.com'] cc=['satyender.sharma@ericsson.com', 'heena.h.goel@ericsson.com'] bcc=[]
+============================================================
+[ExpiryCheck] Starting password expiry check (DB mode)...
+[ExpiryCheck] Escalation tiers active : 3
+   - Tier 1 'Team Lead' (<= 3d): To=2 CC=2 BCC=2
+   - Tier 2 'Manager' (<= 1d): To=1 CC=3 BCC=2
+   - Tier 3 'Team' (<= 16d): To=6 CC=2 BCC=0
+[ExpiryCheck] Active nodes in DB : 1992
+============================================================
+Done. Alert dispatched for 281 node-email(s).

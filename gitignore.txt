@@ -1,0 +1,36 @@
+# ── Python / Django ──────────────────────────────────
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+
+# ── Process / runtime output ─────────────────────────
+nohup.out
+*.log
+
+# ── Backups & scratch (never commit) ─────────────────
+*_ori
+*_original
+*_bkp*
+*.sh_ori
+New_file.txt
+completed_nodes.txt
+failed_nodes.txt
+results.csv
+login_check_summary.csv
+user_check_report.csv
+
+# ── Media: keep folders, ignore contents ─────────────
+media/outputs/*
+media/uploads/*
+media/logs/*
+!media/outputs/.gitkeep
+!media/uploads/.gitkeep
+!media/logs/.gitkeep
+
+# ── Secrets ──────────────────────────────────────────
+.env
+bash_scripts/db_servers.csv
+bash_scripts/db_servers_original_bkp.csv

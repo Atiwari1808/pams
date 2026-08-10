@@ -1,0 +1,72 @@
+﻿{% extends 'dashboard/base.html' %}
+{% block title %}Logs – PAMS{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between mb-4">
+    <div>
+        <h4 class="fw-bold mb-0"><i class="bi bi-journal-text me-2 text-secondary"></i>Backend Logs</h4>
+        <small class="text-muted">Last 200 lines from <code>logs/netops.log</code></small>
+    </div>
+    <div class="d-flex gap-2">
+        <a href="{% url 'dashboard:view_logs' %}" class="btn btn-sm btn-outline-secondary">
+            <i class="bi bi-arrow-clockwise"></i> Refresh
+        </a>
+        <a href="{% url 'dashboard:dashboard' %}" class="btn btn-sm btn-outline-primary">
+            <i class="bi bi-arrow-left"></i> Dashboard
+        </a>
+    </div>
+</div>
+
+<!-- Filter by Job ID -->
+<div class="task-card mb-3">
+    <form method="get" class="d-flex gap-2 align-items-end">
+        <div>
+            <label class="form-label fw-semibold mb-1">Filter by Job #</label>
+            <input type="number" name="job_id" class="form-control form-control-sm"
+                   placeholder="e.g. 2" value="{{ filter_job }}" style="width:120px">
+        </div>
+        <button type="submit" class="btn btn-sm btn-primary">Filter</button>
+        {% if filter_job %}
+        <a href="{% url 'dashboard:view_logs' %}" class="btn btn-sm btn-outline-secondary">Clear</a>
+        {% endif %}
+    </form>
+</div>
+
+<!-- Log output -->
+<div class="task-card">
+    {% if filter_job %}
+    <div class="mb-2">
+        <span class="badge bg-info text-dark">Showing logs for Job #{{ filter_job }}</span>
+    </div>
+    {% endif %}
+    <pre id="logBox" style="
+        background: #0d1117;
+        color: #e6edf3;
+        border-radius: 10px;
+        padding: 1.2rem;
+        font-size: 0.78rem;
+        line-height: 1.6;
+        max-height: 70vh;
+        overflow-y: auto;
+        white-space: pre-wrap;
+        word-break: break-all;
+    ">{{ log_content }}</pre>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Auto-scroll to bottom of log
+    const box = document.getElementById('logBox');
+    if (box) box.scrollTop = box.scrollHeight;
+
+    // Colour-code log levels
+    box.innerHTML = box.innerHTML
+        .replace(/\[ERROR\]/g,   '<span style="color:#ff7b72;font-weight:bold">[ERROR]</span>')
+        .replace(/\[WARNING\]/g, '<span style="color:#e3b341;font-weight:bold">[WARNING]</span>')
+        .replace(/\[INFO\]/g,    '<span style="color:#7ee787">[INFO]</span>')
+        .replace(/✅/g,          '<span style="color:#7ee787">✅</span>')
+        .replace(/❌/g,          '<span style="color:#ff7b72">❌</span>')
+        .replace(/\[Job #(\d+)\]/g, '<span style="color:#79c0ff">[Job #$1]</span>');
+</script>
+{% endblock %}

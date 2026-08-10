@@ -1,0 +1,2 @@
+NodeIP,NodeType,Username,Status,Reason,Attempts,Timestamp,LogFile,OldPwSource,NewPwSource,DBUpdateStatus,DBUpdateRemark
+10.55.183.190,DNS,ebdmots,SUCCESS,OS & App Password Updated,1,2026-06-08 20:33:59,/tmp/reset_logs_20260608_203357/10.55.183.190.log,INPUT,AUTO_GENERATED,SUCCESS,DB updated: password + last_password_reset_date

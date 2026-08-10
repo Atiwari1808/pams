@@ -1,0 +1,53 @@
+from django.urls import path
+from . import views
+
+app_name = 'dashboard'
+
+'''# In dashboard/urls.py
+from django.urls import path
+from .views import LoginUser, logout_view
+
+urlpatterns = [
+    path('login/', LoginUser.as_view(), name='login'),
+    path('logout/', logout_view, name='logout'),
+    # ... other paths
+]'''
+
+urlpatterns = [
+    # Auth
+    path('login/',   views.login_view,  name='login'),
+    path('logout/',  views.logout_view, name='logout'),
+
+    # Main dashboard
+    path('',          views.dashboard, name='dashboard'),
+    path('dashboard/', views.dashboard, name='dashboard'),
+
+    # Task endpoints
+    path('login-check/',        views.login_check,       name='login_check'),
+    path('reachability-check/', views.reachability_check, name='reachability_check'),
+    path('update-password/',    views.update_password,   name='update_password'),
+    path('reset-password/',     views.reset_password,    name='reset_password'),
+
+    # Sample CSV downloads
+    path('download-sample/<str:task_type>/', views.download_sample, name='download_sample'),
+
+    # Job status + output download
+    path('job/<int:job_id>/status/',   views.job_status,      name='job_status'),
+    path('job/<int:job_id>/download/', views.download_output,  name='download_output'),
+
+    # Staff log viewer
+    path('logs/', views.view_logs, name='view_logs'),
+
+    # Password expiry — staff config
+    path('password-expiry/',              views.password_expiry_config, name='password_expiry_config'),
+    path('password-expiry/table/',        views.password_expiry_table,  name='password_expiry_table'),
+    path('password-expiry/run-now/',      views.run_expiry_check_now,   name='run_expiry_check_now'),
+    path('password-expiry/upload-csv/',   views.upload_expiry_csv,      name='upload_expiry_csv'),
+    path('password-expiry/update-csv/',   views.update_expiry_csv,      name='update_expiry_csv'),
+
+    # NodeType bulk update
+    path('password-expiry/bulk-update-node-type/', views.bulk_update_node_type, name='bulk_update_node_type'),
+
+    # Node activate/deactivate
+    path('password-expiry/toggle-node/<int:node_id>/', views.toggle_node_active, name='toggle_node_active'),
+]
