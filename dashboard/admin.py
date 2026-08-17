@@ -6,6 +6,9 @@ from django.urls import path
 from django.http import HttpResponseRedirect
 from datetime import date, timedelta
 from django import forms
+from django.http import HttpResponse
+import csv
+from io import StringIO
 import logging
 
 from .models import (
@@ -27,7 +30,7 @@ def audit(user, model, action, detail=''):
 
 
 # -------------------------------------------------------------
-# NodeType — custom ModelForm with bulk action fields
+# NodeType - custom ModelForm with bulk action fields
 # -------------------------------------------------------------
 
 
@@ -66,7 +69,7 @@ class NodeTypeAdminForm(forms.ModelForm):
  
 
 # -------------------------------------------------------------
-# NodePasswordExpiry inline — shown inside NodeType change page
+# NodePasswordExpiry inline - shown inside NodeType change page
 # -------------------------------------------------------------
 
 class NodePasswordExpiryInline(admin.TabularInline):
@@ -83,7 +86,7 @@ class NodePasswordExpiryInline(admin.TabularInline):
     ordering         = ('node_ip',)
 
     def get_queryset(self, request):
-        # Only active nodes — keeps the page fast on large inventories
+        # Only active nodes - keeps the page fast on large inventories
         return super().get_queryset(request).filter(is_active=True).select_related('node_type')
 
 
@@ -101,7 +104,7 @@ class NodeTypeAdmin(admin.ModelAdmin):
     search_fields = ('name',)
     ordering      = ('name',)
 
-    # updated_by is readonly — shown for info, never edited manually
+    # updated_by is readonly - shown for info, never edited manually
     readonly_fields = ('updated_by',)
 
     fieldsets = (
@@ -163,7 +166,7 @@ class NodeTypeAdmin(admin.ModelAdmin):
         bulk_reset_date = form.cleaned_data.get('bulk_reset_date')
         target_user     = form.cleaned_data.get('bulk_target_username', '').strip()
 
-        # Base queryset — all active nodes of this type, OR just one user's
+        # Base queryset - all active nodes of this type, OR just one user's
         base_qs = NodePasswordExpiry.objects.filter(node_type=obj, is_active=True)
         if target_user:
             base_qs = base_qs.filter(username=target_user)
@@ -410,7 +413,7 @@ class NodePasswordExpiryAdmin(admin.ModelAdmin):
     ordering       = ('node_ip', 'username')
     list_per_page  = 25
     #actions        = ['activate_nodes', 'deactivate_nodes', 'reset_date_to_today']
-    actions = ['activate_nodes', 'deactivate_nodes', 'reset_date_to_today', 'bulk_set_custom_date', 'bulk_set_password']
+    actions = ['activate_nodes', 'deactivate_nodes', 'reset_date_to_today', 'bulk_set_custom_date', 'bulk_set_password', 'export_selected_to_csv']
 
     def get_fieldsets(self, request, obj=None):
         base = (
@@ -513,6 +516,60 @@ class NodePasswordExpiryAdmin(admin.ModelAdmin):
             '{} node(s) last reset date set to today ({}).'.format(
                 updated, today.strftime('%d-%m-%Y')), messages.SUCCESS)
     reset_date_to_today.short_description = 'Set last reset date = TODAY for selected nodes'
+
+    def export_selected_to_csv(self, request, queryset):
+        """
+        Exports the selected nodes (after any list_filter / search_fields
+        narrowing already applied on the changelist) to a .csv file.
+        Includes the Recent Password column since this is an
+        administrator-only page.
+        """
+        headers = ['Managed By', 'Username', 'Node Name', 'Node IP', 'Node Type',
+                   'Policy Days', 'Last Reset', 'Expiry Date', 'Days Left',
+                   'Node Owner', 'Recent Password', 'Updated By']
+
+        buf = StringIO()
+        writer = csv.writer(buf)
+        writer.writerow(headers)
+
+        today = date.today()
+        count = 0
+        for node in queryset.select_related('node_type', 'updated_by').order_by('node_ip', 'username'):
+            policy = node.node_type.policy_days if node.node_type else 90
+            expiry = node.last_password_reset_date + timedelta(days=policy) if node.last_password_reset_date else None
+            days_left = (expiry - today).days if expiry else ''
+            if expiry:
+                if days_left < 0:
+                    days_left_label = 'Expired {} days ago'.format(abs(days_left))
+                elif days_left == 0:
+                    days_left_label = 'Expires Today'
+                else:
+                    days_left_label = 'Expiry in {} Days'.format(days_left)
+            else:
+                days_left_label = '-'
+
+            writer.writerow([
+                node.managed_by, node.username, node.node_name, node.node_ip,
+                node.node_type.name if node.node_type else '',
+                policy,
+                node.last_password_reset_date.strftime('%d-%m-%Y') if node.last_password_reset_date else '',
+                expiry.strftime('%d-%m-%Y') if expiry else '',
+                days_left_label,
+                node.node_owner,
+                node.recent_password,
+                node.updated_by.username if node.updated_by else '',
+            ])
+            count += 1
+
+        audit(request.user.username, 'NodePasswordExpiry', 'export_csv',
+              'exported {} node(s) to CSV'.format(count))
+
+        filename = 'password_expiry_admin_{}.csv'.format(today.strftime('%Y%m%d'))
+        csv_bytes = ('\ufeff' + buf.getvalue()).encode('utf-8')
+        response = HttpResponse(csv_bytes, content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="{}"'.format(filename)
+        return response
+    export_selected_to_csv.short_description = 'Export selected nodes to CSV (with password)'
 
     def save_model(self, request, obj, form, change):
         obj.updated_by = request.user

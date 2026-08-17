@@ -52,6 +52,8 @@ urlpatterns = [
     path('password-expiry/run-now/',      views.run_expiry_check_now,   name='run_expiry_check_now'),
     path('password-expiry/upload-csv/',   views.upload_expiry_csv,      name='upload_expiry_csv'),
     path('password-expiry/update-csv/',   views.update_expiry_csv,      name='update_expiry_csv'),
+    path('password-expiry/download-csv-admin/', views.download_expiry_csv_admin, name='download_expiry_csv_admin'),
+    path('password-expiry/download-csv-user/',  views.download_expiry_csv_user,  name='download_expiry_csv_user'),
     # Sample CSV downloads
     path('sample-full-expiry/', views.download_full_expiry_sample, name='download_full_expiry_sample'),
     path('sample-partial-expiry/', views.download_partial_expiry_sample, name='download_partial_expiry_sample'),

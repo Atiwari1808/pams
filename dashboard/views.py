@@ -26,6 +26,7 @@ from .ldap_login import Ldap # Assumes ldap_login.py is in the same folder
 from . import forms # Assumes you have a forms.py with LoginForm
 import csv
 import json
+from io import BytesIO, StringIO
 from datetime import datetime, timedelta, date
 
 from django.core.paginator import Paginator
@@ -69,7 +70,7 @@ def _run_script(job_id, script_path, input_path, output_path, target_script=None
     from .job_logging import get_job_logger
     _script_name = Path(target_script or script_path).stem
     job_logger, _job_log_dir = get_job_logger(job_id, _script_name)
-    job_logger.info("Job %s starting — script=%s", job_id, script_path)
+    job_logger.info("Job %s starting - script=%s", job_id, script_path)
 
     job = None
     try:
@@ -296,7 +297,7 @@ def dashboard(request):
 
     # Human-readable label map for ALL task types.
     # get_task_type_display() only works if the model choices match
-    # exactly � this dict is the safe fallback used in the template.
+    # exactly - this dict is the safe fallback used in the template.
     task_display_map = {
         'login_check':        'Login Check',
         'reachability_check': 'Reachability Check',
@@ -500,7 +501,7 @@ def terminate_job(request, job_id):
     try:
         os.killpg(os.getpgid(job.process_pid), signal.SIGTERM)
     except ProcessLookupError:
-        pass  # already gone — still mark terminated below
+        pass  # already gone - still mark terminated below
     job.status        = 'terminated'
     job.terminated_by = request.user
     job.terminated_at = timezone.now()
@@ -567,8 +568,8 @@ def _parse_date(raw):
         '%m/%d/%Y',    # 04/23/2026
         '%d.%m.%Y',    # 23.04.2026
         '%Y/%m/%d',    # 2026/04/23
-        # ── Excel short/long month name formats ──────────────
-        '%d-%b-%y',    # 23-Apr-26   ← THIS was missing (Excel default)
+        # -- Excel short/long month name formats --------------
+        '%d-%b-%y',    # 23-Apr-26   - THIS was missing (Excel default)
         '%d-%b-%Y',    # 23-Apr-2026
         '%d/%b/%Y',    # 23/Apr/2026
         '%d %b %Y',    # 23 Apr 2026
@@ -630,7 +631,103 @@ def _compute_expiry(node):
     }
 
 
-def _send_expiry_alerts(rows, alert_emails, threshold_days=7):
+# -- Shared filter helper for password-expiry table + Excel download --------
+# Columns that support per-column text filtering (matches keys in the
+# row dict returned by _compute_expiry()). Order doesn't matter here --
+# the template controls display order; this is just the allow-list.
+EXPIRY_FILTER_COLUMNS = [
+    'managed_by', 'username', 'node_name', 'node_ip', 'node_type',
+    'policy_days', 'last_reset', 'expiry_date', 'days_left_label',
+    'node_owner', 'updated_by',
+]
+
+
+def _filter_expiry_rows(rows, q='', status='', column_filters=None):
+    """
+    Mirrors the client-side JS filter logic (global search box, status pill,
+    and one text filter per column) so that "Download CSV" always exports
+    exactly what the table's current filters would show.
+
+    column_filters: dict like {'username': 'admin', 'node_type': 'dns'} --
+    each value is matched as a case-insensitive substring against that
+    row's corresponding field.
+    """
+    q              = (q or '').strip().lower()
+    status         = (status or '').strip()
+    column_filters = {
+        k: v.strip().lower()
+        for k, v in (column_filters or {}).items()
+        if v and v.strip() and k in EXPIRY_FILTER_COLUMNS
+    }
+
+    out = []
+    for r in rows:
+        if status == 'danger' and r['status'] not in ('expired', 'critical'):
+            continue
+        if status == 'warning' and r['status'] != 'warning':
+            continue
+        if status == 'ok' and r['status'] != 'ok':
+            continue
+
+        if column_filters:
+            skip = False
+            for col, val in column_filters.items():
+                if val not in str(r.get(col, '')).lower():
+                    skip = True
+                    break
+            if skip:
+                continue
+
+        if q:
+            haystack = ' '.join([
+                r.get('managed_by', ''), r.get('username', ''),
+                r.get('node_name', ''),  r.get('node_ip', ''),
+                r.get('node_type', ''),  r.get('node_owner', ''),
+                r.get('expiry_date', ''), r.get('last_reset', ''),
+                r.get('updated_by', ''),
+            ]).lower()
+            if q not in haystack:
+                continue
+
+        out.append(r)
+    return out
+
+
+# -- CSV builder for password-expiry downloads -------------------------------
+def _write_expiry_csv(rows, include_password=False):
+    """
+    Builds a CSV file (in-memory) for the given expiry rows.
+    include_password=True adds the Recent Password column (admin-only use).
+    Returns raw bytes (UTF-8 with BOM, so Excel opens it cleanly).
+    """
+    headers = ['Managed By', 'Username', 'Node Name', 'Node IP', 'Node Type',
+               'Policy Days', 'Last Reset', 'Expiry Date', 'Days Left',
+               'Node Owner']
+    if include_password:
+        headers.append('Recent Password')
+    headers.append('Updated By')
+
+    buf = StringIO()
+    writer = csv.writer(buf)
+    writer.writerow(headers)
+
+    for r in rows:
+        values = [
+            r.get('managed_by', ''), r.get('username', ''),
+            r.get('node_name', ''),  r.get('node_ip', ''),
+            r.get('node_type', ''),  r.get('policy_days', ''),
+            r.get('last_reset', ''), r.get('expiry_date', ''),
+            r.get('days_left_label', ''), r.get('node_owner', ''),
+        ]
+        if include_password:
+            values.append(r.get('recent_password', ''))
+        values.append(r.get('updated_by', ''))
+        writer.writerow(values)
+
+    return ('\ufeff' + buf.getvalue()).encode('utf-8')
+
+
+def _send_expiry_alertss(rows, alert_emails, threshold_days=7):
     expiring = [r for r in rows if 0 <= r['days_left'] <= threshold_days]
     if not expiring or not alert_emails:
         return 0
@@ -734,13 +831,71 @@ def password_expiry_table(request):
     if per_page not in (10, 20, 50, 100):
         per_page = 10
 
+    nodes      = NodePasswordExpiry.objects.filter(is_active=True).order_by('node_ip', 'username')
+    all_rows   = [_compute_expiry(n) for n in nodes]
+    node_types = NodeType.objects.all().order_by('name')
+
+    return render(request, 'dashboard/password_expiry_table.html', {
+        'all_rows':   all_rows,
+        'per_page':   per_page,
+        'node_types': node_types,
+    })
+
+
+
+# -- CSV download: Admin Config page (includes password column) -----------
+
+@login_required
+def download_expiry_csv_admin(request):
+    from .access import user_can_flag
+    if not user_can_flag(request.user, 'can_edit_alert_config'):
+        messages.error(request, 'Access denied.')
+        return redirect('dashboard:dashboard')
+
     nodes    = NodePasswordExpiry.objects.filter(is_active=True).order_by('node_ip', 'username')
     all_rows = [_compute_expiry(n) for n in nodes]
 
-    return render(request, 'dashboard/password_expiry_table.html', {
-        'all_rows': all_rows,
-        'per_page': per_page,
-    })
+    column_filters = {col: request.GET.get('f_' + col, '') for col in EXPIRY_FILTER_COLUMNS}
+    filtered = _filter_expiry_rows(
+        all_rows,
+        q=request.GET.get('q', ''),
+        status=request.GET.get('status', ''),
+        column_filters=column_filters,
+    )
+
+    csv_bytes = _write_expiry_csv(filtered, include_password=True)
+    logger.info("Admin expiry CSV downloaded by '%s' - %s row(s)",
+                request.user.username, len(filtered))
+
+    filename = 'password_expiry_admin_{}.csv'.format(date.today().strftime('%Y%m%d'))
+    response = HttpResponse(csv_bytes, content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="{}"'.format(filename)
+    return response
+
+
+# -- CSV download: user-facing table (no password column) ------------------
+
+@login_required
+def download_expiry_csv_user(request):
+    nodes    = NodePasswordExpiry.objects.filter(is_active=True).order_by('node_ip', 'username')
+    all_rows = [_compute_expiry(n) for n in nodes]
+
+    column_filters = {col: request.GET.get('f_' + col, '') for col in EXPIRY_FILTER_COLUMNS}
+    filtered = _filter_expiry_rows(
+        all_rows,
+        q=request.GET.get('q', ''),
+        status=request.GET.get('status', ''),
+        column_filters=column_filters,
+    )
+
+    csv_bytes = _write_expiry_csv(filtered, include_password=False)
+    logger.info("User expiry CSV downloaded by '%s' - %s row(s)",
+                request.user.username, len(filtered))
+
+    filename = 'password_expiry_{}.csv'.format(date.today().strftime('%Y%m%d'))
+    response = HttpResponse(csv_bytes, content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="{}"'.format(filename)
+    return response
 
 
 # -- Manual alert trigger --------------------------------------
@@ -1127,9 +1282,9 @@ class LoginUser(View):
         messages.error(request, 'Invalid Credentials! Login Failed.')
         return render(request, 'dashboard/login.html', {'form': form})
 
-# ─────────────────────────────────────────────────────────────
+# -------------------------------------------------------------
 # Self-Registration (account created as is_active=False)
-# ─────────────────────────────────────────────────────────────
+# -------------------------------------------------------------
 
 def register_view(request):
     """
@@ -1148,7 +1303,7 @@ def register_view(request):
             user = User.objects.create_user(
                 username  = form.cleaned_data['username'],
                 password  = form.cleaned_data['password1'],
-                is_active = False,          # ← account disabled until admin approves
+                is_active = False,          # - account disabled until admin approves
             )
             logger.info(
                 "New account registered (pending activation): '%s'",
