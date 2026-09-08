@@ -1,4 +1,4 @@
-# NetOps Dashboard – Django Project
+# PAMS
 
 A Django-based web dashboard for network operations teams.  
 Features: login/auth, 4 task runners (CSV in → bash script → CSV out), and daily password-expiry email alerts.
