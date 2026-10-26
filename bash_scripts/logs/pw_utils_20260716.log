@@ -1,0 +1,95 @@
+[2026-07-16 20:07:18] [DEBUG  ] resolve: ip=10.113.132.13 user=elcmusr OLD=INPUT
+[2026-07-16 20:07:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-07-16 20:07:18] [INFO   ] resolve: ip=10.113.132.13 user=elcmusr NEW=AUTO_GENERATED len=12
+[2026-07-16 20:07:21] [INFO   ] ============================================================
+[2026-07-16 20:07:21] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-07-16 20:07:21] [INFO   ]  Source output : /tmp/tmp.x6jKIGlUV3.csv
+[2026-07-16 20:07:21] [INFO   ]  Sidecar       : /tmp/tmp.GcVTZDrARp.json
+[2026-07-16 20:07:21] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_316.csv
+[2026-07-16 20:07:21] [INFO   ] ============================================================
+[2026-07-16 20:07:21] [DEBUG  ] update_db_after_reset: ip=10.113.132.13 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:07:21] [WARNING] update_db_after_reset: no rows matched ip=10.113.132.13 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:07:21] [INFO   ] DB UPDATE NOT_FOUND ip=10.113.132.13 user=elcmusr
+[2026-07-16 20:07:21] [INFO   ] ------------------------------------------------------------
+[2026-07-16 20:07:21] [INFO   ] DB updates:  SUCCESS=0  FAILED=0  SKIPPED/NOT_FOUND=1
+[2026-07-16 20:07:21] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_316.csv
+[2026-07-16 20:07:21] [INFO   ] ============================================================
+[2026-07-16 20:07:21] [INFO   ] Post-processing complete: 0 SUCCESS, 0 FAILED, 1 SKIPPED DB updates
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.122.141 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.122.141 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.45.78.145 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.45.78.145 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.122.13 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.122.13 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.78.141 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.78.141 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.79.13 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.79.13 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.82.141 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.91.82.141 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.89.36.141 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.89.36.141 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.193.250.177 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.193.250.177 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.90.249.174 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.90.249.174 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.35.27.175 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.35.27.175 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.35.132.13 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.35.132.13 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.35.132.141 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.35.132.141 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.35.133.13 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.35.133.13 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.113.111.141 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.113.111.141 user=elcmusr NEW=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.113.121.13 user=elcmusr OLD=INPUT
+[2026-07-16 20:33:28] [DEBUG  ] resolve: ip=10.113.121.13 user=elcmusr NEW=INPUT
+[2026-07-16 20:34:18] [INFO   ] ============================================================
+[2026-07-16 20:34:18] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-07-16 20:34:18] [INFO   ]  Source output : /tmp/tmp.LWmqdfcjCV.csv
+[2026-07-16 20:34:18] [INFO   ]  Sidecar       : /tmp/tmp.rdn4A3OkGS.json
+[2026-07-16 20:34:18] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_317.csv
+[2026-07-16 20:34:18] [INFO   ] ============================================================
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.45.78.145 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.45.78.145 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.45.78.145 user=elcmusr
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.91.122.13 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.91.122.13 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.91.122.13 user=elcmusr
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.91.78.141 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.91.78.141 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.91.78.141 user=elcmusr
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE SKIP  ip=10.91.122.141 user=elcmusr reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.91.79.13 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.91.79.13 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.91.79.13 user=elcmusr
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.91.82.141 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.91.82.141 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.91.82.141 user=elcmusr
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.89.36.141 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.89.36.141 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.89.36.141 user=elcmusr
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE SKIP  ip=10.193.250.177 user=elcmusr reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE SKIP  ip=10.90.249.174 user=elcmusr reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.35.132.13 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.35.132.13 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.35.132.13 user=elcmusr
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.35.132.141 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.35.132.141 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.35.132.141 user=elcmusr
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.35.133.13 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.35.133.13 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.35.133.13 user=elcmusr
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.113.121.13 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.113.121.13 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.113.121.13 user=elcmusr
+[2026-07-16 20:34:18] [DEBUG  ] update_db_after_reset: ip=10.113.111.141 user=elcmusr db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-07-16 20:34:18] [WARNING] update_db_after_reset: no rows matched ip=10.113.111.141 user=elcmusr – NOT in PAMS DB
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE NOT_FOUND ip=10.113.111.141 user=elcmusr
+[2026-07-16 20:34:18] [INFO   ] DB UPDATE SKIP  ip=10.35.27.175 user=elcmusr reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-07-16 20:34:18] [INFO   ] ------------------------------------------------------------
+[2026-07-16 20:34:18] [INFO   ] DB updates:  SUCCESS=0  FAILED=0  SKIPPED/NOT_FOUND=15
+[2026-07-16 20:34:18] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_317.csv
+[2026-07-16 20:34:18] [INFO   ] ============================================================
+[2026-07-16 20:34:18] [INFO   ] Post-processing complete: 0 SUCCESS, 0 FAILED, 15 SKIPPED DB updates

@@ -1,0 +1,75 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}{{ name }} – Log Explorer{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+    <div>
+        <h4 class="fw-bold mb-0">
+            <i class="bi bi-file-earmark-text me-2 text-secondary"></i>{{ name }}
+        </h4>
+        <small class="text-muted">{{ rel }}</small>
+    </div>
+    <div class="d-flex gap-2 align-items-center">
+        <form method="get" action="{% url 'dashboard:log_explorer_view' %}" class="d-flex gap-2">
+            <input type="hidden" name="path" value="{{ rel }}">
+            <input type="text" name="q" value="{{ q }}" placeholder="Search in file…"
+                   class="form-control form-control-sm" style="width:200px">
+            <button type="submit" class="btn btn-sm btn-primary">Search</button>
+        </form>
+        <a href="{% url 'dashboard:log_explorer_view' %}?path={{ rel|urlencode }}&full=1"
+           class="btn btn-sm btn-outline-secondary">
+            <i class="bi bi-arrows-fullscreen"></i> Full
+        </a>
+        <a href="{% url 'dashboard:log_explorer_download' %}?path={{ rel|urlencode }}"
+           class="btn btn-sm btn-outline-success">
+            <i class="bi bi-download"></i> Download
+        </a>
+        <a href="{% url 'dashboard:log_explorer' %}?path={{ parent_rel|urlencode }}"
+           class="btn btn-sm btn-outline-primary">
+            <i class="bi bi-arrow-left"></i> Back
+        </a>
+    </div>
+</div>
+
+{% if truncated %}
+<div class="task-card mb-2 py-2">
+    <span class="badge bg-warning text-dark">
+        <i class="bi bi-info-circle"></i> Showing last 1000 lines &mdash; use “Full” to load everything
+    </span>
+</div>
+{% endif %}
+
+<div class="task-card">
+    <pre id="logBox" style="
+        background: #0d1117;
+        color: #e6edf3;
+        border-radius: 10px;
+        padding: 1.2rem;
+        font-size: 0.78rem;
+        line-height: 1.6;
+        max-height: 72vh;
+        overflow-y: auto;
+        white-space: pre-wrap;
+        word-break: break-all;
+        margin: 0;
+    ">{{ content }}</pre>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    const box = document.getElementById('logBox');
+    if (box) {
+        box.scrollTop = box.scrollHeight;
+        box.innerHTML = box.innerHTML
+            .replace(/\[ERROR\]/g,   '<span style="color:#ff7b72;font-weight:bold">[ERROR]</span>')
+            .replace(/\[WARNING\]/g, '<span style="color:#e3b341;font-weight:bold">[WARNING]</span>')
+            .replace(/\[WARN\]/g,    '<span style="color:#e3b341;font-weight:bold">[WARN]</span>')
+            .replace(/\[INFO\]/g,    '<span style="color:#7ee787">[INFO]</span>')
+            .replace(/\[OK\]/g,      '<span style="color:#7ee787;font-weight:bold">[OK]</span>')
+            .replace(/\[DEBUG\]/g,   '<span style="color:#79c0ff">[DEBUG]</span>')
+            .replace(/SUCCESS/g,     '<span style="color:#7ee787;font-weight:bold">SUCCESS</span>')
+            .replace(/FAILED/g,      '<span style="color:#ff7b72;font-weight:bold">FAILED</span>');
+    }
+</script>
+{% endblock %}

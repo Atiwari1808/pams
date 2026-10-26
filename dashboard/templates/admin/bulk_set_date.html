@@ -1,0 +1,19 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<h1>Set custom reset date for selected nodes</h1>
+<p>{{ nodes.count }} node(s) selected.</p>
+<form method="post">
+  {% csrf_token %}
+  {% for n in nodes %}<input type="hidden" name="_selected_action" value="{{ n.pk }}">{% endfor %}
+  <input type="hidden" name="action" value="{{ action }}">
+  <p>
+    <label style="font-weight:600">Reset date:</label><br>
+    <input type="date" name="reset_date"
+           style="padding:6px 10px;border:1px solid #ccc;border-radius:6px" required>
+  </p>
+  <p style="color:#e53e3e;font-size:13px">Applies last_password_reset_date to the selected nodes only.</p>
+  <input type="submit" name="apply" value="Apply"
+         style="background:#1a73e8;color:#fff;padding:8px 22px;border:none;border-radius:6px;font-weight:600;cursor:pointer">
+  &nbsp;<a href="../" style="color:#666">Cancel</a>
+</form>
+{% endblock %}

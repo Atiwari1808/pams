@@ -1,0 +1,605 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Dashboard – PAMS{% endblock %}
+
+{% block extra_head %}
+<style>
+/* ── PAGE HEADER ───────────────────────────── */
+.ph { display:flex; align-items:center; justify-content:space-between; margin-bottom:1.6rem; }
+.ph-title { font-size:1.45rem; font-weight:800; color:#1e1b4b; letter-spacing:-0.03em; }
+.ph-sub   { font-size:0.84rem; color:#94a3b8; margin-top:0.15rem; }
+.online-pill {
+    display:inline-flex; align-items:center; gap:0.4rem;
+    background:#f0fdf4; color:#166534; border:1px solid #bbf7d0;
+    padding:0.35rem 0.85rem; border-radius:999px; font-size:0.78rem; font-weight:600;
+}
+.pulse { width:7px;height:7px;border-radius:50%;background:#22c55e;
+         box-shadow:0 0 0 0 rgba(34,197,94,0.4);
+         animation:pulse 1.8s infinite; }
+@keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(34,197,94,0.4)} 70%{box-shadow:0 0 0 7px rgba(34,197,94,0)} 100%{box-shadow:0 0 0 0 rgba(34,197,94,0)} }
+
+/* ── STAT STRIP ───────────────────────────── */
+.stat-strip { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-bottom:1.6rem; }
+@media(max-width:900px){ .stat-strip{grid-template-columns:repeat(2,1fr);} }
+.stat-box {
+    background:#fff; border-radius:14px; padding:1rem 1.2rem;
+    border:1px solid #e8edf5; box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    display:flex; align-items:center; gap:0.85rem;
+}
+.stat-ico { width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0; }
+.stat-num { font-size:1.5rem;font-weight:800;color:#1e1b4b;line-height:1; }
+.stat-lbl { font-size:0.72rem;color:#94a3b8;margin-top:0.15rem;font-weight:500; }
+
+/* ── TASK GRID ───────────────────────────── */
+.task-grid {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1.2rem;
+    margin-bottom:1.6rem;
+    align-items:stretch;        /* all columns same height */
+}
+/* Scale columns to the number of VISIBLE cards (set by JS via data-count) */
+.task-grid[data-count="1"] { grid-template-columns:1fr; }
+.task-grid[data-count="2"] { grid-template-columns:repeat(2,1fr); }
+.task-grid[data-count="3"] { grid-template-columns:repeat(3,1fr); }
+.task-grid[data-count="4"] { grid-template-columns:repeat(4,1fr); }
+@media(max-width:1100px){ .task-grid{grid-template-columns:repeat(2,1fr) !important;} }
+@media(max-width:580px) { .task-grid{grid-template-columns:1fr !important;} }
+
+/* ── TASK CARD ───────────────────────────── */
+.tcard {
+    background:#fff;
+    border-radius:18px;
+    border:1px solid #e8edf5;
+    box-shadow:0 3px 16px rgba(0,0,0,0.055);
+    display:flex; flex-direction:column;
+    transition:box-shadow 0.2s,transform 0.2s;
+    overflow:hidden;
+}
+.tcard:hover { box-shadow:0 10px 32px rgba(79,70,229,0.13); transform:translateY(-3px); }
+
+/* coloured top accent stripe */
+.tcard-stripe { height:4px; width:100%; flex-shrink:0; }
+
+.tcard-body { padding:1.35rem 1.35rem 1.1rem; display:flex; flex-direction:column; flex:1; }
+
+.tcard-head { display:flex; align-items:center; gap:0.7rem; margin-bottom:0.6rem; }
+.tcard-ico  {
+    width:42px;height:42px;border-radius:12px;
+    display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0;
+}
+.tcard-name { font-weight:700; font-size:0.97rem; color:#1e1b4b; }
+.tcard-desc { font-size:0.79rem; color:#94a3b8; line-height:1.55; margin-bottom:1rem; flex:1; }
+
+/* node-type select */
+.nt-select {
+    width:100%; padding:0.48rem 0.7rem;
+    border-radius:9px; border:1.5px solid #e0e7ff;
+    font-size:0.8rem; color:#374151; background:#f8faff;
+    margin-bottom:0.6rem; cursor:pointer; appearance:auto;
+    font-weight:500;
+}
+.nt-select:focus { outline:none; border-color:#4f46e5; }
+
+/* dropzone inside card */
+.dz-card {
+    border:2px dashed #c7d2fe; border-radius:11px;
+    padding:0.85rem 0.6rem; text-align:center;
+    cursor:pointer; transition:all 0.18s;
+    background:#f8faff; display:block;
+    margin-bottom:0.65rem;
+}
+.dz-card:hover { border-color:var(--color,#4f46e5); background:#f0f4ff; }
+.dz-card input[type=file]{ display:none; }
+.dz-up-icon { display:block; font-size:1.45rem; margin-bottom:0.2rem; }
+.dz-txt { display:block; font-size:0.76rem; color:#94a3b8; font-weight:500; }
+
+/* run button */
+.btn-run {
+    width:100%; padding:0.58rem 0; border-radius:10px;
+    font-weight:700; font-size:0.83rem; border:none;
+    cursor:pointer; transition:opacity 0.15s,transform 0.12s;
+    display:flex;align-items:center;justify-content:center;gap:0.4rem;
+    margin-bottom:0.5rem; letter-spacing:0.01em;
+    color:#fff;
+}
+.btn-run:hover { opacity:0.92; transform:scale(0.992); }
+
+/* sample download link */
+.btn-sample {
+    width:100%; padding:0.48rem; border-radius:10px;
+    font-weight:600; font-size:0.78rem;
+    display:flex;align-items:center;justify-content:center;gap:0.4rem;
+    text-decoration:none; transition:all 0.15s;
+    background:transparent; border:1.5px solid;
+}
+
+/* ── per-card colour tokens ───────────────── */
+/* blue */ .c-blue .tcard-stripe{background:linear-gradient(90deg,#3b82f6,#2563eb);}
+           .c-blue .tcard-ico{background:#dbeafe;color:#1d4ed8;}
+           .c-blue .dz-card:hover{border-color:#2563eb;background:#eff6ff;}
+           .c-blue .dz-up-icon{color:#2563eb;}
+           .c-blue .btn-run{background:linear-gradient(135deg,#3b82f6,#1d4ed8);}
+           .c-blue .btn-sample{color:#1d4ed8;border-color:#bfdbfe;}
+           .c-blue .btn-sample:hover{background:#eff6ff;}
+
+/* green */ .c-green .tcard-stripe{background:linear-gradient(90deg,#10b981,#059669);}
+            .c-green .tcard-ico{background:#d1fae5;color:#059669;}
+            .c-green .dz-card:hover{border-color:#059669;background:#ecfdf5;}
+            .c-green .dz-up-icon{color:#059669;}
+            .c-green .btn-run{background:linear-gradient(135deg,#10b981,#059669);}
+            .c-green .btn-sample{color:#059669;border-color:#a7f3d0;}
+            .c-green .btn-sample:hover{background:#ecfdf5;}
+
+/* amber */ .c-amber .tcard-stripe{background:linear-gradient(90deg,#f59e0b,#d97706);}
+            .c-amber .tcard-ico{background:#fef3c7;color:#d97706;}
+            .c-amber .dz-card:hover{border-color:#d97706;background:#fffbeb;}
+            .c-amber .dz-up-icon{color:#d97706;}
+            .c-amber .btn-run{background:linear-gradient(135deg,#f59e0b,#d97706);}
+            .c-amber .btn-sample{color:#b45309;border-color:#fde68a;}
+            .c-amber .btn-sample:hover{background:#fffbeb;}
+
+/* purple */ .c-purple .tcard-stripe{background:linear-gradient(90deg,#8b5cf6,#7c3aed);}
+             .c-purple .tcard-ico{background:#ede9fe;color:#7c3aed;}
+             .c-purple .dz-card:hover{border-color:#7c3aed;background:#f5f3ff;}
+             .c-purple .dz-up-icon{color:#7c3aed;}
+             .c-purple .btn-run{background:linear-gradient(135deg,#8b5cf6,#7c3aed);}
+             .c-purple .btn-sample{color:#7c3aed;border-color:#ddd6fe;}
+             .c-purple .btn-sample:hover{background:#f5f3ff;}
+
+/* ── JOBS SECTION ─────────────────────────── */
+.jobs-card {
+    background:#fff; border-radius:18px;
+    border:1px solid #e8edf5;
+    box-shadow:0 3px 16px rgba(0,0,0,0.055);
+    overflow:hidden;
+}
+.jobs-head {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:1.1rem 1.4rem;
+    border-bottom:1px solid #f1f5f9;
+}
+.jobs-head-title { font-weight:700; font-size:0.97rem; color:#1e1b4b; display:flex; align-items:center; gap:0.5rem; }
+.btn-refresh {
+    display:inline-flex;align-items:center;gap:0.35rem;
+    background:#f1f5f9;color:#475569;border:none;
+    border-radius:8px;font-size:0.78rem;font-weight:600;
+    padding:0.38rem 0.85rem;cursor:pointer;transition:background 0.15s;
+}
+.btn-refresh:hover{background:#e2e8f0;}
+
+.jtable { width:100%; border-collapse:collapse; font-size:0.83rem; }
+.jtable thead tr { background:#f8faff; }
+.jtable thead th {
+    padding:0.65rem 1.1rem; text-align:left;
+    font-size:0.72rem; font-weight:700; color:#94a3b8;
+    text-transform:uppercase; letter-spacing:0.06em;
+    border-bottom:1px solid #e8edf5;
+}
+.jtable tbody td { padding:0.7rem 1.1rem; border-bottom:1px solid #f8fafc; vertical-align:middle; }
+.jtable tbody tr:last-child td { border-bottom:none; }
+.jtable tbody tr:hover td { background:#fafbff; }
+.jtable .job-id { color:#c7d2fe;font-weight:700; }
+.jtable .job-task { font-weight:700; color:#1e1b4b; }
+.user-tag {
+    display:inline-flex;align-items:center;gap:0.3rem;
+    background:#eef2ff;color:#4f46e5;
+    padding:0.2rem 0.65rem;border-radius:999px;
+    font-size:0.75rem;font-weight:700;
+}
+.file-cell { color:#94a3b8; font-size:0.78rem; max-width:180px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.time-cell { color:#94a3b8; white-space:nowrap; font-size:0.8rem; }
+
+.btn-dl {
+    display:inline-flex;align-items:center;gap:0.3rem;
+    background:linear-gradient(135deg,#10b981,#059669);color:#fff;
+    border:none;border-radius:8px;padding:0.38rem 0.85rem;
+    font-size:0.78rem;font-weight:700;cursor:pointer;text-decoration:none;
+    transition:opacity 0.15s;
+}
+.btn-dl:hover{opacity:0.88;color:#fff;}
+.btn-err {
+    display:inline-flex;align-items:center;gap:0.3rem;
+    background:#fee2e2;color:#dc2626;
+    border:none;border-radius:8px;padding:0.38rem 0.85rem;
+    font-size:0.78rem;font-weight:700;cursor:pointer;
+    transition:background 0.15s;
+}
+.btn-err:hover{background:#fecaca;}
+.proc-lbl { display:inline-flex;align-items:center;gap:0.35rem;color:#6366f1;font-size:0.8rem;font-weight:600; }
+
+.empty-state { text-align:center; padding:3.5rem 1rem; color:#cbd5e1; }
+.empty-state i { font-size:3rem; display:block; margin-bottom:0.75rem; opacity:0.45; }
+.empty-state p { font-size:0.88rem; margin:0; }
+
+/* Error Modal */
+.emodal-header { background:linear-gradient(135deg,#dc2626,#b91c1c); }
+
+/* ── Expiry Buttons ─────────────────────────── */
+.expiry-btn {
+    display:inline-flex; align-items:center; gap:0.45rem;
+    padding:0.48rem 1.1rem; border-radius:999px;
+    font-size:0.82rem; font-weight:700; text-decoration:none;
+    transition:all 0.18s; border:2px solid transparent;
+    white-space:nowrap;
+}
+.expiry-btn-user {
+    background:#fff; color:#4f46e5;
+    border-color:#c7d2fe;
+    box-shadow:0 2px 8px rgba(79,70,229,0.10);
+}
+.expiry-btn-user:hover {
+    background:#eef2ff; color:#3730a3; border-color:#a5b4fc;
+}
+.expiry-btn-admin {
+    background:linear-gradient(135deg,#7c3aed,#4f46e5);
+    color:#fff; border-color:transparent;
+    box-shadow:0 2px 10px rgba(124,58,237,0.28);
+}
+.expiry-btn-admin:hover {
+    opacity:0.9; transform:translateY(-1px);
+    box-shadow:0 4px 14px rgba(124,58,237,0.38);
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!-- Page header -->
+<div class="ph">
+    <div>
+        <div class="ph-title">Password Access Management</div>
+        <div class="ph-sub">Select a task, upload your CSV and run</div>
+    </div>
+</div>
+
+<!-- Stat strip -->
+<div class="stat-strip">
+    {% with total=recent_jobs|length %}
+    {% with comp=recent_jobs|length %}
+    <div class="stat-box">
+        <div class="stat-ico" style="background:#eef2ff;color:#4f46e5"><i class="bi bi-layers-fill"></i></div>
+        <div><div class="stat-num">{{ total }}</div><div class="stat-lbl">Total Jobs</div></div>
+    </div>
+    <div class="stat-box">
+        <div class="stat-ico" style="background:#dcfce7;color:#059669"><i class="bi bi-check-circle-fill"></i></div>
+        <div><div class="stat-num" id="stat-completed">–</div><div class="stat-lbl">Completed</div></div>
+    </div>
+    <div class="stat-box">
+        <div class="stat-ico" style="background:#dbeafe;color:#2563eb"><i class="bi bi-arrow-repeat"></i></div>
+        <div><div class="stat-num" id="stat-running">–</div><div class="stat-lbl">Running</div></div>
+    </div>
+    <div class="stat-box">
+        <div class="stat-ico" style="background:#fee2e2;color:#dc2626"><i class="bi bi-x-circle-fill"></i></div>
+        <div><div class="stat-num" id="stat-failed">–</div><div class="stat-lbl">Failed</div></div>
+    </div>
+    {% endwith %}{% endwith %}
+</div>
+
+<!-- ─── Four Task Cards ─── -->
+<div class="task-grid">
+
+    {% if access.cards.login_check %}
+    <!-- 1 · Login Check -->
+    <div class="tcard c-blue">
+        <div class="tcard-stripe"></div>
+        <div class="tcard-body">
+            <div class="tcard-head">
+                <div class="tcard-ico"><i class="bi bi-shield-lock-fill"></i></div>
+                <span class="tcard-name">Login Check</span>
+            </div>
+            <p class="tcard-desc">Verify SSH / login credentials for every device listed in the CSV.</p>
+            <form method="post" action="{% url 'dashboard:login_check' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label class="dz-card" ondragover="ev(event)" ondrop="drop(event,this)">
+                    <i class="bi bi-cloud-arrow-up-fill dz-up-icon"></i>
+                    <span class="dz-txt file-name">Click or drag CSV here</span>
+                    <input type="file" name="csv_file" accept=".csv,.xlsx" onchange="showName(this)">
+                </label>
+                <button type="submit" class="btn-run">
+                    <i class="bi bi-play-circle-fill"></i> Run Login Check
+                </button>
+            </form>
+            <a href="{% url 'dashboard:download_sample' 'login_check' %}" class="btn-sample">
+                <i class="bi bi-file-earmark-arrow-down-fill"></i> Download Sample CSV
+            </a>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if access.cards.reachability_check %}
+    <!-- 2 · Reachability Check -->
+    <div class="tcard c-green">
+        <div class="tcard-stripe"></div>
+        <div class="tcard-body">
+            <div class="tcard-head">
+                <div class="tcard-ico"><i class="bi bi-wifi"></i></div>
+                <span class="tcard-name">Reachability Check</span>
+            </div>
+            <p class="tcard-desc">SSH into each server and test connectivity to all target node IPs.</p>
+            <form method="post" action="{% url 'dashboard:reachability_check' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label class="dz-card" ondragover="ev(event)" ondrop="drop(event,this)">
+                    <i class="bi bi-cloud-arrow-up-fill dz-up-icon"></i>
+                    <span class="dz-txt file-name">Click or drag CSV here</span>
+                    <input type="file" name="csv_file" accept=".csv,.xlsx" onchange="showName(this)">
+                </label>
+                <button type="submit" class="btn-run">
+                    <i class="bi bi-play-circle-fill"></i> Run Reachability Check
+                </button>
+            </form>
+            <a href="{% url 'dashboard:download_sample' 'reachability_check' %}" class="btn-sample">
+                <i class="bi bi-file-earmark-arrow-down-fill"></i> Download Sample CSV
+            </a>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if access.cards.reset_password %}
+    <!-- 3 · Reset Password -->
+    <div class="tcard c-amber">
+        <div class="tcard-stripe"></div>
+        <div class="tcard-body">
+            <div class="tcard-head">
+                <div class="tcard-ico"><i class="bi bi-arrow-repeat"></i></div>
+                <span class="tcard-name">Reset Password</span>
+            </div>
+            <p class="tcard-desc">Reset device passwords for the selected node type.</p>
+            <form method="post" action="{% url 'dashboard:reset_password' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <select name="node_type" class="nt-select" required>
+                    <option value="" disabled selected>— Select Node Type —</option>
+                    {% for rt in access.reset_types %}
+                    <option value="{{ rt }}">{{ rt|upper }}</option>
+                    {% endfor %}
+
+                </select>
+                <label class="dz-card" ondragover="ev(event)" ondrop="drop(event,this)">
+                    <i class="bi bi-cloud-arrow-up-fill dz-up-icon"></i>
+                    <span class="dz-txt file-name">Click or drag CSV here</span>
+                    <input type="file" name="csv_file" accept=".csv,.xlsx" onchange="showName(this)">
+                </label>
+                <button type="submit" class="btn-run">
+                    <i class="bi bi-play-circle-fill"></i> Run Reset Password
+                </button>
+            </form>
+            <a href="{% url 'dashboard:download_sample' 'reset_password' %}" class="btn-sample">
+                <i class="bi bi-file-earmark-arrow-down-fill"></i> Download Sample CSV
+            </a>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if access.cards.update_password %}
+    <!-- 4 · Update Password in DB -->
+    <div class="tcard c-purple">
+        <div class="tcard-stripe"></div>
+        <div class="tcard-body">
+            <div class="tcard-head">
+                <div class="tcard-ico"><i class="bi bi-database-lock"></i></div>
+                <span class="tcard-name">Update Password in DB</span>
+            </div>
+
+            <p class="tcard-desc">Mode A : Search by Node IP and Username<br>(Old password : NA in Input Sheet)</p>
+            <p class="tcard-desc">Mode B : Search by Old Password and Username (Node IP : NA in Input Sheet)</p>
+            <form method="post" action="{% url 'dashboard:update_password' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label class="dz-card" ondragover="ev(event)" ondrop="drop(event,this)">
+                    <i class="bi bi-cloud-arrow-up-fill dz-up-icon"></i>
+                    <span class="dz-txt file-name">Click or drag CSV here</span>
+                    <input type="file" name="csv_file" accept=".csv,.xlsx" onchange="showName(this)">
+                </label>
+                <button type="submit" class="btn-run">
+                    <i class="bi bi-play-circle-fill"></i> Run Update Password
+                </button>
+            </form>
+            <a href="{% url 'dashboard:download_sample' 'update_password' %}" class="btn-sample">
+                <i class="bi bi-file-earmark-arrow-down-fill"></i> Download Sample CSV
+            </a>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+<!-- ─── Recent Jobs ─── -->
+<div class="jobs-card">
+    <div class="jobs-head">
+        <span class="jobs-head-title">
+            <i class="bi bi-clock-history" style="color:#4f46e5"></i>
+            Recent Jobs
+        </span>
+        <button class="btn-refresh" onclick="location.reload()">
+            <i class="bi bi-arrow-clockwise"></i> Refresh
+        </button>
+    </div>
+
+    {% if recent_jobs %}
+    <div style="overflow-x:auto">
+        <table class="jtable">
+            <thead>
+                <tr>
+                    <th>#</th><th>Task</th><th>Run By</th>
+                    <th>Status</th><th>Input File</th><th>Started</th><th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for job in recent_jobs %}
+            <tr id="job-row-{{ job.pk }}">
+                <td class="job-id">#{{ job.pk }}</td>
+                <td class="job-task">{{ job.task_type_display}}</td>
+                <td><span class="user-tag"><i class="bi bi-person-fill"></i>{{ job.user.username }}</span></td>
+                <td>
+                    <span class="badge-pill bp-{{ job.status }}" id="status-{{ job.pk }}">
+                        {% if job.status == 'running' %}
+                        <span class="spinner-border" style="width:0.55rem;height:0.55rem;border-width:2px"></span>
+                        {% elif job.status == 'completed' %}<i class="bi bi-check-circle-fill" style="font-size:0.7rem"></i>
+                        {% elif job.status == 'failed' %}<i class="bi bi-x-circle-fill" style="font-size:0.7rem"></i>
+                        {% elif job.status == 'pending' %}<i class="bi bi-hourglass-split" style="font-size:0.7rem"></i>
+                        {% endif %}
+                        {{ job.status|title }}
+                    </span>
+                </td>
+                <td class="file-cell" title="{{ job.input_file.name }}">{{ job.input_file.name|default:'-' }}</td>
+                <td class="time-cell">{{ job.created_at|date:"d M, H:i" }}</td>
+                <td id="action-{{ job.pk }}">
+                    {% if job.status == 'completed' and job.output_file %}
+                    <a href="{% url 'dashboard:download_output' job.pk %}" class="btn-dl">
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                    {% elif job.status == 'failed' %}
+		    <button class="btn-err"
+        		    onclick="showError('Job #{{ job.pk }} — {{ job.task_type_display|escapejs }}', `{{ job.error_message|escapejs }}`)">
+                    <!--button class="btn-err"
+                            onclick="showError('Job #{{ job.pk }} — {{ job.get_task_type_display }}', `{{ job.error_message|escapejs }}`)" -->
+                        <i class="bi bi-exclamation-circle"></i> View Error
+                    </button>
+                    {% elif job.status == 'pending' or job.status == 'running' %}
+                    <span class="proc-lbl">
+                        <span class="spinner-border spinner-border-sm" style="width:0.75rem;height:0.75rem;border-width:2px"></span>
+                        Processing…
+                    </span>
+                    {% if user.is_staff %}
+                    <button class="btn-err" style="margin-left:.4rem"
+                            onclick="terminateJob({{ job.pk }})">
+                        <i class="bi bi-stop-circle"></i> Terminate
+                    </button>
+                    {% endif %}
+
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <i class="bi bi-inbox"></i>
+        <p>No jobs yet — submit a task above to get started.</p>
+    </div>
+    {% endif %}
+</div>
+
+<!-- Error Modal -->
+<div class="modal fade" id="errModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content" style="border-radius:18px;border:none;overflow:hidden;">
+            <div class="modal-header emodal-header border-0">
+                <h6 class="modal-title fw-bold text-white fs-6" id="errModalTitle">
+                    <i class="bi bi-exclamation-circle me-2"></i>Error Details
+                </h6>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-0">
+                <pre id="errModalBody" style="
+                    background:#0d1117;color:#ff7b72;margin:0;padding:1.4rem;
+                    font-size:0.8rem;line-height:1.75;white-space:pre-wrap;
+                    word-break:break-all;max-height:360px;overflow-y:auto;
+                "></pre>
+            </div>
+            <div class="modal-footer" style="border-top:1px solid #f1f5f9;padding:0.75rem 1.2rem;">
+                {% if user.is_staff %}
+                <a href="{% url 'dashboard:view_logs' %}" class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-journal-code me-1"></i>Full Logs
+                </a>
+                {% endif %}
+                <button class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+/* ── Error modal ── */
+function showError(title, msg) {
+    document.getElementById('errModalTitle').innerHTML =
+        '<i class="bi bi-exclamation-circle me-2"></i>' + title;
+    document.getElementById('errModalBody').textContent = msg || 'No error details recorded.';
+    new bootstrap.Modal(document.getElementById('errModal')).show();
+}
+
+/* ── Drag-drop / file preview ── */
+function showName(input) {
+    input.closest('label').querySelector('.file-name').textContent =
+        input.files[0]?.name || 'Click or drag CSV here';
+}
+function ev(e) { e.preventDefault(); }
+function drop(e, lbl) {
+    e.preventDefault();
+    const inp = lbl.querySelector('input[type=file]');
+    inp.files = e.dataTransfer.files;
+    showName(inp);
+}
+
+/* ── Auto-size the task grid to the number of visible cards ── */
+(function () {
+    var grid = document.querySelector('.task-grid');
+    if (!grid) return;
+    var n = grid.querySelectorAll('.tcard').length;
+    grid.setAttribute('data-count', n);
+})();
+
+/* ── Stats counters ── */
+function calcStats() {
+    let c=0, r=0, f=0;
+    document.querySelectorAll('[id^="status-"]').forEach(el => {
+        const t = el.textContent.trim().toLowerCase();
+        if (t.includes('completed')) c++;
+        else if (t.includes('running') || t.includes('pending')) r++;
+        else if (t.includes('failed')) f++;
+    });
+    document.getElementById('stat-completed').textContent = c;
+    document.getElementById('stat-running').textContent   = r;
+    document.getElementById('stat-failed').textContent    = f;
+}
+calcStats();
+
+/*Terminate Job*/
+function terminateJob(id){
+    if(!confirm('Terminate job #'+id+'? This stops the running process.')) return;
+    fetch('/job/'+id+'/terminate/', {
+        method:'POST',
+        headers:{'X-CSRFToken': (document.cookie.match(/csrftoken=([^;]+)/)||[])[1] || ''}
+    }).then(r=>r.json()).then(d=>{
+        if(d.ok){ location.reload(); }
+        else { alert(d.msg || 'Could not terminate'); }
+    }).catch(()=>alert('Request failed'));
+}
+
+/* ── Job polling ── */
+function pollJobs() {
+    document.querySelectorAll('[id^="status-"]').forEach(el => {
+        const id  = el.id.split('-')[1];
+        const txt = el.textContent.trim().toLowerCase();
+        if (!txt.includes('pending') && !txt.includes('running') && !txt.includes('processing')) return;
+        fetch('/job/' + id + '/status/')
+            .then(r => r.json())
+            .then(data => {
+                const s = data.status;
+                // Update badge
+                const icons = {
+                    completed: '<i class="bi bi-check-circle-fill" style="font-size:0.7rem"></i> ',
+                    failed:    '<i class="bi bi-x-circle-fill" style="font-size:0.7rem"></i> ',
+                    running:   '<span class="spinner-border" style="width:0.55rem;height:0.55rem;border-width:2px"></span> ',
+                    pending:   '<i class="bi bi-hourglass-split" style="font-size:0.7rem"></i> ',
+                };
+                el.className = 'badge-pill bp-' + s;
+                el.innerHTML = (icons[s] || '') + s.charAt(0).toUpperCase() + s.slice(1);
+
+                // Update action cell
+                const act = document.getElementById('action-' + id);
+                if (s === 'completed' && data.output_url) {
+                    act.innerHTML = '<a href="/job/'+id+'/download/" class="btn-dl"><i class="bi bi-download"></i> Download</a>';
+                } else if (s === 'failed') {
+                    const err = (data.error || 'No details.').replace(/`/g, "'");
+                    act.innerHTML = '<button class="btn-err" onclick="showError(\'Job #'+id+'\', \`'+err+'\`)"><i class="bi bi-exclamation-circle"></i> View Error</button>';
+                }
+                calcStats();
+            });
+    });
+}
+setInterval(pollJobs, 4000);
+</script>
+{% endblock %}

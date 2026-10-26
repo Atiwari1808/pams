@@ -1,0 +1,129 @@
+﻿{% extends 'dashboard/base.html' %}
+{% block title %}Login - PAMS{% endblock %}
+{% load static %}
+{% block content %}
+<style>
+    body { background: linear-gradient(132deg, #ebefefed 0%, #6b8deab3 100%); }
+    .login-wrap {
+        min-height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .login-card {
+        background: #fff;
+        border-radius: 5px;
+        padding: 2.5rem 2rem;
+        width: 100%;
+        max-width: 420px;
+        box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+    }
+    .brand-logo{
+            display: flex;
+            align-items: center;
+        }
+
+    .brand-logo img{
+	    height: 28px;
+	    width: auto;
+	}
+    .login-logo {
+        width: 64px; height: 64px;
+        background: linear-gradient(135deg, #0d6efd, #6610f2);
+        border-radius: 18px;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 2rem;
+        color: #fff;
+        margin: 0 auto 1.2rem;
+    }
+    .login-card h2 { font-weight: 700; font-size: 1.5rem; color: #1a1d29; }
+    .login-card .subtitle { color: #64748b; font-size: 0.9rem; margin-bottom: 1.8rem; }
+    .form-control {
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+        border: 1.5px solid #e2e8f0;
+        font-size: 0.95rem;
+    }
+    .form-control:focus { border-color: #0d6efd; box-shadow: 0 0 0 3px rgba(13,110,253,0.12); }
+    .btn-login {
+        background: linear-gradient(135deg, #0d6efd, #6610f2);
+        border: none;
+        border-radius: 10px;
+        padding: 0.75rem;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.02em;
+        transition: opacity 0.2s;
+    }
+    .btn-login:hover { opacity: 0.9; }
+</style>
+
+<div class="login-wrap">
+    <div class="login-card text-center">
+	<div class="brand-header d-flex align-items-center justify-content-center gap-2">
+
+	   <span class="brand-logo">
+              <img src="{% static 'img/logo.png' %}" alt="Ericsson Logo">
+           </span>
+           <h2>PAMS</h2>
+        </div>
+	<p class="subtitle">Sign in to manage your network tasks</p>
+
+        {% if messages %}
+        {% for msg in messages %}
+        <div class="alert alert-danger py-2 text-start" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-1"></i> {{ msg }}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        <form method="post" class="text-start">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0" style="border-radius:10px 0 0 10px">
+                        <i class="bi bi-person text-secondary"></i>
+                    </span>
+                    <input type="text" name="username" class="form-control border-start-0" placeholder="Enter username" style="border-radius:0 10px 10px 0" required autofocus>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="form-label fw-semibold">Password</label>
+                <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0" style="border-radius:10px 0 0 10px">
+                        <i class="bi bi-lock text-secondary"></i>
+                    </span>
+                    <input type="password" name="password" id="pwdField" class="form-control border-start-0" placeholder="Enter password" style="border-radius:0 10px 10px 0" required>
+                    <button type="button" class="btn btn-light border ms-1" style="border-radius:8px" onclick="togglePwd()">
+                        <i class="bi bi-eye" id="eyeIcon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-login text-white">
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Sign In
+                </button>
+            </div>
+        </form>
+        <hr class="my-3" style="border-color:#e2e8f0;">
+        <p class="mb-1" style="font-size:0.85rem; color:#64748b;">New to PAMS?</p>
+        <a href="{% url 'dashboard:register' %}"
+           class="btn btn-outline-secondary btn-sm w-100"
+           style="border-radius:8px; font-size:0.88rem;">
+            <i class="bi bi-person-plus me-1"></i> Create Your Account
+        </a>
+
+    </div>
+</div>
+
+<script>
+function togglePwd() {
+    const f = document.getElementById('pwdField');
+    const i = document.getElementById('eyeIcon');
+    if (f.type === 'password') { f.type = 'text'; i.className = 'bi bi-eye-slash'; }
+    else { f.type = 'password'; i.className = 'bi bi-eye'; }
+}
+</script>
+{% endblock %}

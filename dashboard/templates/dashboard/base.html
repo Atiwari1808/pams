@@ -1,0 +1,317 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PAMS{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --nav-h: 66px;
+            --indigo: #4f46e5;
+            --indigo-dark: #3730a3;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: #f1f5f9;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+        }
+
+        /* ── NAVBAR ─────────────────────────────── */
+        .topbar{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+
+            height: 60px;
+            background: #fff;
+            padding: 0 2rem;
+            gap: 0.75rem;
+
+            display: flex;
+            align-items: center;
+
+            transition: all 0.5s;
+            box-shadow: 0px 2px 20px rgba(1,41,112,0.1);
+            border-bottom: none;
+        }
+
+        /* Brand */
+        .topbar-brand{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            white-space: nowrap;
+            line-height: 1;
+        }
+
+        /* Logo image instead of gradient box */
+        .brand-logo{
+            display: flex;
+            align-items: center;
+        }
+
+	.brand-logo img{
+	    height: 28px;
+	    width: auto;
+	}
+
+	.topbar-brand span{
+	    font-weight: 700;
+	    font-size: 26px;
+	    color: #012970; /* Ericsson blue */
+
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    letter-spacing: 0;
+	}
+        /* Large screens */
+        @media (min-width:1200px){
+            .topbar-brand{
+                width: 280px;
+            }
+        }
+
+        /* ── RIGHT SIDE ───────────────────────────── */
+        .topbar-right{
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Buttons */
+        .tb-btn{
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.42rem 0.85rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1.5px solid transparent;
+            transition: all 0.15s;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        .tb-btn-indigo{
+            background: #eef2ff;
+            color: #012970;
+            border-color: #c7d2fe;
+        }
+
+        .tb-btn-indigo:hover{
+            background: #e0e7ff;
+            color: var(--indigo-dark);
+        }
+
+        .tb-btn-indigo.active{
+            background: linear-gradient(135deg, #657ce5, #120aa5);
+            color: #fff;
+        }
+
+        .tb-btn-red{
+            background: #fff1f2;
+            color: #e11d48;
+            border-color: #fecdd3;
+        }
+
+        .tb-btn-red:hover{
+            background: #ffe4e6;
+        }
+
+        /* Separator */
+        .topbar-sep{
+            width: 1px;
+            height: 26px;
+            background: #e2e8f0;
+            margin: 0 0.25rem;
+        }
+
+        /* User chip */
+        .user-chip{
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: linear-gradient(135deg, #657ce5, #120aa5);
+            color: #fff;
+            padding: 0.38rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            box-shadow: 0 2px 8px rgba(79,70,229,0.28);
+        }
+
+        /* ── NAVBAR ─────────────────────────────── */
+        /*.topbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            height: var(--nav-h);
+            background: #fff;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+            display: flex; align-items: center;
+            padding: 0 2rem; gap: 0.75rem;
+        }
+        .topbar-brand {
+            display: flex; align-items: center; gap: 0.55rem;
+            font-weight: 800; font-size: 1.15rem; color: var(--indigo);
+            text-decoration: none; letter-spacing: -0.02em; white-space: nowrap;
+        }
+        .brand-logo {
+            width: 34px; height: 34px; border-radius: 9px;
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-size: 1rem;
+            box-shadow: 0 3px 10px rgba(79,70,229,0.35);
+        }
+        .topbar-right {
+            margin-left: auto;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .tb-btn {
+            display: inline-flex; align-items: center; gap: 0.35rem;
+            padding: 0.42rem 0.85rem;
+            border-radius: 8px; font-size: 0.8rem; font-weight: 600;
+            text-decoration: none; border: 1.5px solid transparent;
+            transition: all 0.15s; white-space: nowrap; cursor: pointer;
+        }
+        .tb-btn-indigo { background: #eef2ff; color: var(--indigo); border-color: #c7d2fe; }
+        .tb-btn-indigo:hover { background: #e0e7ff; color: var(--indigo-dark); }
+        .tb-btn-indigo.active { background: var(--indigo); color: #fff; }
+        .tb-btn-red { background: #fff1f2; color: #e11d48; border-color: #fecdd3; }
+        .tb-btn-red:hover { background: #ffe4e6; }
+        .topbar-sep { width: 1px; height: 26px; background: #e2e8f0; margin: 0 0.25rem; }
+        .user-chip {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: #fff; padding: 0.38rem 0.9rem;
+            border-radius: 999px; font-size: 0.8rem; font-weight: 700;
+            box-shadow: 0 2px 8px rgba(79,70,229,0.28);
+        }*/
+
+        /* ── MAIN WRAP ─────────────────────────── */
+        .page-wrap {
+            margin-top: var(--nav-h);
+            padding: 0rem 2.5rem;
+            padding-right: 2.5rem;
+            padding-bottom: 2rem;
+            padding-left: 2.5rem;
+            
+            max-width: 1440px;
+            margin-left: auto; margin-right: auto;
+        }
+
+        /* ── ALERTS ────────────────────────────── */
+        .alert { border-radius: 10px; font-size: 0.86rem; border: none; }
+        .alert-success { background: #f0fdf4; color: #166534; border-left: 4px solid #22c55e; }
+        .alert-danger, .alert-error { background: #fff1f2; color: #9f1239; border-left: 4px solid #f43f5e; }
+        .alert-warning { background: #fffbeb; color: #92400e; border-left: 4px solid #f59e0b; }
+        .alert-info    { background: #eff6ff; color: #1e40af; border-left: 4px solid #3b82f6; }
+
+        /* ── CARDS ─────────────────────────────── */
+        .card-base {
+            background: #fff; border-radius: 18px;
+            border: 1px solid #e8edf5;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .card-base:hover {
+            box-shadow: 0 8px 28px rgba(79,70,229,0.1);
+            transform: translateY(-2px);
+        }
+
+        /* ── BADGES ────────────────────────────── */
+        .badge-pill {
+            display: inline-flex; align-items: center; gap: 0.3rem;
+            padding: 0.28rem 0.75rem; border-radius: 999px;
+            font-size: 0.75rem; font-weight: 600; white-space: nowrap;
+        }
+        .bp-pending   { background: #fef9c3; color: #854d0e; }
+        .bp-running   { background: #dbeafe; color: #1e40af; }
+        .bp-completed { background: #dcfce7; color: #166534; }
+        .bp-failed    { background: #fee2e2; color: #991b1b; }
+
+        /* ── DROP ZONE ─────────────────────────── */
+        .dropzone {
+            border: 2px dashed #c7d2fe; border-radius: 11px;
+            padding: 0.9rem 0.75rem; text-align: center;
+            cursor: pointer; transition: all 0.18s;
+            background: #f8faff; display: block;
+            color: #64748b; font-size: 0.8rem;
+        }
+        .dropzone:hover { border-color: var(--indigo); background: #eef2ff; }
+        .dropzone input[type=file] { display: none; }
+        .dz-icon { display: block; font-size: 1.5rem; margin-bottom: 0.25rem; }
+        .dz-label { display: block; font-size: 0.76rem; }
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+{% if user.is_authenticated %}
+<header class="topbar">
+    <a class="topbar-brand" href="{% url 'dashboard:dashboard' %}">
+
+        <span class="brand-logo">
+            <img src="{% static 'img/logo.png' %}" alt="Ericsson Logo">
+        </span>
+
+        <span>PAMS</span>
+        
+    </a>
+
+    <div class="topbar-right">
+        {% if access.can_view_password_expiry %}
+        <a href="{% url 'dashboard:password_expiry_table' %}"
+           class="tb-btn tb-btn-indigo {% if request.resolver_match.url_name == 'password_expiry_table' %}active{% endif %}">
+            <i class="bi bi-bell-fill"></i> Password Expiry
+        </a>
+        {% endif %}
+
+        {% if access.can_view_log_explorer %}
+        <a href="{% url 'dashboard:log_explorer' %}"
+           class="tb-btn tb-btn-indigo {% if request.resolver_match.url_name == 'log_explorer' %}active{% endif %}">
+            <i class="bi bi-folder2-open"></i> Log Explorer
+        </a>
+        {% endif %}
+        <div class="topbar-sep"></div>
+        <span class="user-chip">
+            <i class="bi bi-person-fill"></i>
+            {{ user.get_full_name|default:user.username }}
+        </span>
+        <a href="{% url 'dashboard:logout' %}" class="tb-btn tb-btn-red">
+            <i class="bi bi-box-arrow-right"></i> Logout
+        </a>
+    </div>
+</header>
+
+<div class="page-wrap" style="margin-top: var(--nav-h);">
+{% endif %}
+
+{% if messages %}
+<div style="margin-bottom:1.2rem">
+{% for msg in messages %}
+<div class="alert alert-{{ msg.tags|default:'info' }} alert-dismissible fade show" role="alert">
+    {{ msg }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+</div>
+{% endfor %}
+</div>
+{% endif %}
+
+{% block content %}{% endblock %}
+
+{% if user.is_authenticated %}</div>{% endif %}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+{% block extra_js %}{% endblock %}
+</body>
+</html>

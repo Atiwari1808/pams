@@ -1,0 +1,832 @@
+import os
+import csv as csv_mod
+import subprocess
+import threading
+import logging
+
+from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+from django.http import FileResponse, JsonResponse, HttpResponse
+from django.utils import timezone
+from django.conf import settings
+from django.core.mail import EmailMultiAlternatives
+
+from .models import (
+    TaskJob, NodePasswordExpiry, NodeType,
+    ExpiryAlertConfig
+)
+import csv
+import json
+from datetime import datetime, timedelta, date
+from django.core.paginator import Paginator
+
+# -------------------------------------------------------------
+# Logger  (reads path from settings - media/logs/netops.log)
+# -------------------------------------------------------------
+logger = logging.getLogger('netops')
+
+# -------------------------------------------------------------
+# Helpers
+# -------------------------------------------------------------
+
+def _task_choices():
+    """Returns list of (key, label) tuples from settings.TASK_CONFIG."""
+    return [(k, v['label']) for k, v in settings.TASK_CONFIG.items()]
+
+
+def _script_for(task_type):
+    cfg = settings.TASK_CONFIG.get(task_type)
+    if not cfg:
+        return None
+    return os.path.join(settings.BASH_SCRIPTS_DIR, cfg['script'])
+
+
+def _output_log_dir(subfolder):
+    """Returns media/logs/<subfolder>/ path, creating it if needed."""
+    path = os.path.join(settings.MEDIA_ROOT, 'logs', subfolder)
+    os.makedirs(path, exist_ok=True)
+    return path
+
+
+# -------------------------------------------------------------
+# Background script runner
+# -------------------------------------------------------------
+
+def _run_script(job_id, script_path, input_path, output_path):
+    logger.info("[Job #%s] Starting - script: %s", job_id, script_path)
+    start_time = timezone.now()
+    job = None
+    try:
+        job = TaskJob.objects.get(pk=job_id)
+        job.status = 'running'
+        job.save()
+
+        if not os.path.isfile(script_path):
+            raise FileNotFoundError(f"Script not found: {script_path}")
+
+        result = subprocess.run(
+            ['bash', script_path, input_path, output_path],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            universal_newlines=True,
+            timeout=600
+        )
+
+        try:
+            result.stdout = result.stdout.decode('utf-8', errors='replace')
+        except AttributeError:
+            pass  # already a string
+
+        try:
+            result.stderr = result.stderr.decode('utf-8', errors='replace')
+        except AttributeError:
+            pass  # already a string        
+
+        if result.stdout:
+            logger.info("[Job #%s] STDOUT:\n%s", job_id, result.stdout.strip())
+        if result.stderr:
+            logger.warning("[Job #%s] STDERR:\n%s", job_id, result.stderr.strip())
+
+        if result.returncode == 0 and os.path.exists(output_path):
+            rel = os.path.relpath(output_path, settings.MEDIA_ROOT)
+            job.output_file   = rel
+            job.status        = 'completed'
+            job.error_message = ''
+            logger.info("[Job #%s] Completed.", job_id)
+        else:
+            job.status = 'failed'
+            parts = []
+            if result.returncode != 0:
+                parts.append(f"Exit code: {result.returncode}")
+            if result.stderr.strip():
+                parts.append(f"STDERR: {result.stderr.strip()}")
+            if not os.path.exists(output_path):
+                parts.append("Output file was not created.")
+            job.error_message = '\n'.join(parts) or 'Script failed with no output.'
+            logger.error("[Job #%s] Failed: %s", job_id, job.error_message)
+
+    except FileNotFoundError as e:
+        if job is None:
+            job = TaskJob.objects.get(pk=job_id)
+        job.status        = 'failed'
+        job.error_message = str(e)
+        logger.error("[Job #%s] FileNotFoundError: %s", job_id, e)
+
+    except subprocess.TimeoutExpired:
+        if job is None:
+            job = TaskJob.objects.get(pk=job_id)
+        job.status        = 'failed'
+        job.error_message = 'Script timed out after 10 minutes.'
+        logger.error("[Job #%s] Timeout.", job_id)
+
+    except Exception as e:
+        if job is None:
+            job = TaskJob.objects.get(pk=job_id)
+        job.status        = 'failed'
+        job.error_message = f'{type(e).__name__}: {e}'
+        logger.exception("[Job #%s] Unexpected: %s", job_id, e)
+
+    finally:
+        if job is not None:
+            end_time             = timezone.now()
+            job.completed_at     = end_time
+            job.duration_seconds = int((end_time - start_time).total_seconds())
+            job.save()
+            logger.info("[Job #%s] Final status: %s | duration: %ss",
+                        job_id, job.status, job.duration_seconds)
+
+
+def _submit_task(request, task_type):
+    if task_type not in settings.TASK_CONFIG:
+        messages.error(request, f'Unknown task type: {task_type}')
+        return redirect('dashboard:dashboard')
+
+    if 'csv_file' not in request.FILES:
+        messages.error(request, 'Please upload a CSV file.')
+        return redirect('dashboard:dashboard')
+
+    uploaded = request.FILES['csv_file']
+    if not (uploaded.name.endswith('.csv') or uploaded.name.endswith('.xlsx')):
+        messages.error(request, 'Only .csv and .xlsx files are allowed.')
+        return redirect('dashboard:dashboard')
+
+    job = TaskJob.objects.create(
+        user=request.user,
+        task_type=task_type,
+        input_file=uploaded,
+        status='pending',
+    )
+    logger.info("[Job #%s] Created by '%s' - task: %s, file: %s",
+                job.pk, request.user.username, task_type, uploaded.name)
+
+    input_abs  = os.path.join(settings.MEDIA_ROOT, job.input_file.name)
+    output_dir = os.path.join(settings.MEDIA_ROOT, 'outputs')
+    os.makedirs(output_dir, exist_ok=True)
+    output_abs = os.path.join(output_dir, f'{task_type}_output_{job.pk}.csv')
+
+    script_abs = _script_for(task_type)
+    if not os.path.isfile(script_abs):
+        job.status        = 'failed'
+        job.error_message = f"Script not found: {script_abs}"
+        job.completed_at  = timezone.now()
+        job.save()
+        messages.error(request, f'Script not found in bash_scripts/ folder.')
+        return redirect('dashboard:dashboard')
+
+    threading.Thread(
+        target=_run_script,
+        args=(job.pk, script_abs, input_abs, output_abs),
+        daemon=True
+    ).start()
+
+    messages.success(request, f'Task submitted (Job #{job.pk}). Check status below.')
+    return redirect('dashboard:dashboard')
+
+
+# -------------------------------------------------------------
+# Auth
+# -------------------------------------------------------------
+
+def login_view(request):
+    if request.user.is_authenticated:
+        return redirect('dashboard:dashboard')
+    if request.method == 'POST':
+        username = request.POST.get('username', '').strip()
+        password = request.POST.get('password', '')
+        user = authenticate(request, username=username, password=password)
+        if user:
+            logger.info("User '%s' logged in.", username)
+            login(request, user)
+            return redirect('dashboard:dashboard')
+        else:
+            logger.warning("Failed login attempt for: '%s'", username)
+            messages.error(request, 'Invalid username or password.')
+    return render(request, 'dashboard/login.html')
+
+
+def logout_view(request):
+    logger.info("User '%s' logged out.", request.user.username)
+    logout(request)
+    return redirect('dashboard:login')
+
+# ================================================================
+# PASTE THESE TWO FUNCTIONS into views.py replacing the existing
+# dashboard() and download_sample() functions
+# ================================================================
+
+@login_required
+def dashboard(request):
+    if request.user.is_staff:
+        recent_jobs = TaskJob.objects.all().order_by('-created_at')[:20]
+    else:
+        recent_jobs = TaskJob.objects.filter(user=request.user).order_by('-created_at')[:10]
+
+    # Human-readable label map for ALL task types.
+    # get_task_type_display() only works if the model choices match
+    # exactly — this dict is the safe fallback used in the template.
+    task_display_map = {
+        'login_check':        'Login Check',
+        'reachability_check': 'Reachability Check',
+        'reset_password':     'Reset Password',
+        'update_password':    'Update Password in DB',
+    }
+    # Also pull any labels defined in TASK_CONFIG (keeps it in sync)
+    for k, v in settings.TASK_CONFIG.items():
+        task_display_map.setdefault(k, v.get('label', k))
+    for job in recent_jobs:
+        job.display_name = task_display_map.get(job.task_type, job.task_type.replace('_', ' ').title())
+    return render(request, 'dashboard/dashboard.html', {
+        'recent_jobs':      recent_jobs,
+        'task_choices':     _task_choices(),
+        'task_display_map': task_display_map,
+    })
+
+
+@login_required
+def download_sample(request, task_type):
+    # -- reset_password is NOT in TASK_CONFIG (uses RESET_PASSWORD_SCRIPTS)
+    #    so we handle it separately with a generic combined sample CSV --
+    if task_type == 'reset_password':
+        sample_name = 'sample_reset_password.csv'
+        # Try serving from disk first (place this file in BASH_SCRIPTS_DIR
+        # if you want a custom sample)
+        file_path = os.path.join(str(settings.BASH_SCRIPTS_DIR), sample_name)
+        if os.path.isfile(file_path):
+            logger.info("Serving reset_password sample from disk: %s", file_path)
+            response = FileResponse(open(file_path, 'rb'), as_attachment=True)
+            response['Content-Disposition'] = f'attachment; filename="{sample_name}"'
+            return response
+        # Fallback: generate in-memory sample covering all three node types
+        sample_content = (
+            'NodeIP,NodeType,Username,OldPassword,NewPassword\n'
+            '10.0.0.1,DNS,admin,OldPass@1,NewPass@2\n'
+            '10.0.0.2,CMM,root,OldPass@3,NewPass@4\n'
+            '10.0.0.3,WMG,espdtmb,OldPass@5,NewPass@6\n'
+        )
+        logger.info("Serving reset_password sample from memory")
+        response = HttpResponse(sample_content, content_type='text/csv')
+        response['Content-Disposition'] = f'attachment; filename="{sample_name}"'
+        return response
+
+    # -- All other task types are defined in TASK_CONFIG --
+    cfg = settings.TASK_CONFIG.get(task_type)
+    if not cfg:
+        messages.error(request, 'Sample not found.')
+        return redirect('dashboard:dashboard')
+
+    file_path = os.path.join(str(settings.BASH_SCRIPTS_DIR), cfg['sample_file'])
+    if os.path.isfile(file_path):
+        logger.info("Serving sample CSV from disk: %s", file_path)
+        response = FileResponse(open(file_path, 'rb'), as_attachment=True)
+        response['Content-Disposition'] = 'attachment; filename="{}"'.format(cfg['sample_file'])
+        return response
+
+    logger.info("Serving sample CSV from memory (file not found): %s", file_path)
+    response = HttpResponse(cfg['sample_content'], content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="{}"'.format(cfg['sample_file'])
+    return response
+
+# -------------------------------------------------------------
+# Individual task endpoints
+# -------------------------------------------------------------
+
+@login_required
+def login_check(request):
+    if request.method == 'POST':
+        return _submit_task(request, 'login_check')
+    return redirect('dashboard:dashboard')
+
+
+@login_required
+def reachability_check(request):
+    if request.method == 'POST':
+        return _submit_task(request, 'reachability_check')
+    return redirect('dashboard:dashboard')
+
+
+@login_required
+def update_password(request):
+    if request.method == 'POST':
+        return _submit_task(request, 'update_password')
+    return redirect('dashboard:dashboard')
+
+
+@login_required
+def reset_password(request):
+    if request.method != 'POST':
+        return redirect('dashboard:dashboard')
+
+    if 'csv_file' not in request.FILES:
+        messages.error(request, 'Please upload a CSV file.')
+        return redirect('dashboard:dashboard')
+
+    uploaded = request.FILES['csv_file']
+    if not (uploaded.name.endswith('.csv') or uploaded.name.endswith('.xlsx')):
+        messages.error(request, 'Only .csv and .xlsx files are allowed.')
+        return redirect('dashboard:dashboard')
+
+    node_type   = request.POST.get('node_type', '').strip().lower()
+    script_name = settings.RESET_PASSWORD_SCRIPTS.get(node_type)
+    if not script_name:
+        messages.error(request, 'Please select a valid node type (DNS or CMM).')
+        return redirect('dashboard:dashboard')
+
+    script_abs = os.path.join(settings.BASH_SCRIPTS_DIR, script_name)
+    job = TaskJob.objects.create(
+        user=request.user,
+        task_type='reset_password',
+        input_file=uploaded,
+        status='pending',
+    )
+
+    input_abs  = os.path.join(settings.MEDIA_ROOT, job.input_file.name)
+    output_dir = os.path.join(settings.MEDIA_ROOT, 'outputs')
+    os.makedirs(output_dir, exist_ok=True)
+    output_abs = os.path.join(output_dir, f'reset_password_output_{job.pk}.csv')
+
+    logger.info("[Job #%s] Reset Password - node_type='%s' script='%s' user='%s'",
+                job.pk, node_type.upper(), script_name, request.user.username)
+
+    if not os.path.isfile(script_abs):
+        job.status        = 'failed'
+        job.error_message = f"Script not found: {script_abs}"
+        job.completed_at  = timezone.now()
+        job.save()
+        messages.error(request, f'Script "{script_name}" not found.')
+        return redirect('dashboard:dashboard')
+
+    threading.Thread(
+        target=_run_script,
+        args=(job.pk, script_abs, input_abs, output_abs),
+        daemon=True
+    ).start()
+
+    label = node_type.upper()
+    messages.success(request, f'Job #{job.pk} submitted - {label} ({uploaded.name})')
+    return redirect('dashboard:dashboard')
+
+
+# -------------------------------------------------------------
+# Job status (AJAX) + download
+# -------------------------------------------------------------
+
+@login_required
+def job_status(request, job_id):
+    if request.user.is_staff:
+        job = get_object_or_404(TaskJob, pk=job_id)
+    else:
+        job = get_object_or_404(TaskJob, pk=job_id, user=request.user)
+    return JsonResponse({
+        'status':           job.status,
+        'error':            job.error_message,
+        'duration_seconds': job.duration_seconds,
+        'output_url':       request.build_absolute_uri('/media/' + job.output_file.name)
+                            if job.output_file else None,
+    })
+
+
+@login_required
+def download_output(request, job_id):
+    if request.user.is_staff:
+        job = get_object_or_404(TaskJob, pk=job_id)
+    else:
+        job = get_object_or_404(TaskJob, pk=job_id, user=request.user)
+    if not job.output_file:
+        messages.error(request, 'Output file not ready yet.')
+        return redirect('dashboard:dashboard')
+    file_path = os.path.join(str(settings.MEDIA_ROOT), job.output_file.name)
+    fname = os.path.basename(file_path)
+    response = FileResponse(open(file_path, 'rb'), as_attachment=True)
+    response['Content-Disposition'] = 'attachment; filename="{}"'.format(fname)
+    return response
+
+
+# -------------------------------------------------------------
+# Log viewer (staff only) - reads from media/logs/netops.log
+# -------------------------------------------------------------
+
+@login_required
+def view_logs(request):
+    if not request.user.is_staff:
+        messages.error(request, 'Access denied. Staff only.')
+        return redirect('dashboard:dashboard')
+
+    log_file = os.path.join(settings.MEDIA_ROOT, 'logs', 'netops.log')
+    log_content = ''
+    if os.path.exists(log_file):
+        with open(log_file, 'r', encoding='utf-8', errors='replace') as f:
+            lines = f.readlines()
+            log_content = ''.join(lines[-200:])
+    else:
+        log_content = 'Log file not found yet. Run a task first.'
+
+    filter_job = request.GET.get('job_id', '').strip()
+    if filter_job:
+        filtered = [l for l in log_content.splitlines()
+                    if f'[Job #{filter_job}]' in l]
+        log_content = '\n'.join(filtered) or f'No entries for Job #{filter_job}'
+
+    return render(request, 'dashboard/logs.html', {
+        'log_content': log_content,
+        'filter_job':  filter_job,
+    })
+
+
+# -------------------------------------------------------------
+# Password Expiry - DB-backed (NodePasswordExpiry + NodeType)
+# -------------------------------------------------------------
+
+def _parse_date(raw):
+    for fmt in ('%d-%m-%Y', '%Y-%m-%d', '%d/%m/%Y', '%m/%d/%Y'):
+        try:
+            return datetime.strptime(raw.strip(), fmt).date()
+        except ValueError:
+            continue
+    return None
+
+
+def _compute_expiry(node):
+    today       = date.today()
+    policy_days = node.policy_days   # uses property -> NodeType.policy_days
+    expiry_date = node.last_password_reset_date + timedelta(days=policy_days)
+    days_left   = (expiry_date - today).days
+
+    if days_left < 0:
+        label  = f'Expired {abs(days_left)} days ago'
+        status = 'expired'
+    elif days_left == 0:
+        label  = 'Expires Today'
+        status = 'critical'
+    elif days_left <= 7:
+        label  = f'Expiry in {days_left} Days'
+        status = 'warning'
+    else:
+        label  = f'Expiry in {days_left} Days'
+        status = 'ok'
+
+    return {
+        'id':              node.pk,
+        'managed_by':      node.managed_by,
+        'username':        node.username,
+        'node_name':       node.node_name,
+        'node_ip':         node.node_ip,
+        'node_type':       node.node_type.name if node.node_type else '',
+        'policy_days':     policy_days,
+        'expiry_date':     expiry_date.strftime('%d-%m-%Y'),
+        'days_left':       days_left,
+        'days_left_label': label,
+        'node_owner':      node.node_owner,
+        'recent_password': node.recent_password,
+        'last_reset':      node.last_password_reset_date.strftime('%d-%m-%Y'),
+        'status':          status,
+        'is_active':       node.is_active,
+        'updated_by':      node.updated_by.username if node.updated_by else '',
+    }
+
+
+def _send_expiry_alerts(rows, alert_emails, threshold_days=7):
+    expiring = [r for r in rows if 0 <= r['days_left'] <= threshold_days]
+    if not expiring or not alert_emails:
+        return 0
+
+    table_rows = ''
+    for r in expiring:
+        table_rows += (
+            '<tr><td>{managed_by}</td><td>{username}</td><td>{node_name}</td>'
+            '<td>{node_ip}</td><td>{node_type}</td><td>{policy_days}</td>'
+            '<td>{expiry_date}</td><td>{days_left_label}</td><td>{node_owner}</td></tr>'
+        ).format(**r)
+
+    html_body = """
+    <h3 style="color:#c0392b;">Password Expiry Alert - Nodes Expiring Within {days} Days</h3>
+    <table border="1" cellpadding="6" cellspacing="0"
+           style="border-collapse:collapse;font-family:monospace;font-size:13px;">
+      <thead style="background:#2c3e50;color:#fff;">
+        <tr><th>Managed By</th><th>Username</th><th>Node Name</th>
+        <th>Node IP</th><th>Node Type</th><th>Policy Days</th>
+        <th>Expiry Date</th><th>Days Left</th><th>Node Owner</th></tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </table>
+    <p style="color:#7f8c8d;font-size:11px;">Automated alert - do not reply.</p>
+    """.format(days=threshold_days, rows=table_rows)
+
+    recipients = [e.strip() for e in alert_emails.splitlines() if e.strip()]
+    try:
+        subject = f'[PAMS] Password Expiry Alert - {len(expiring)} node(s) expiring within {threshold_days} days'
+        msg = EmailMultiAlternatives(
+            subject, 'See HTML version.',
+            settings.DEFAULT_FROM_EMAIL, recipients
+        )
+        msg.attach_alternative(html_body, 'text/html')
+        msg.send()
+        logger.info("Expiry alert sent to %s - %s node(s)", recipients, len(expiring))
+        return len(expiring)
+    except Exception as e:
+        logger.error("Failed to send expiry alert email: %s", e)
+        return 0
+
+
+def _read_csv_bytes(f):
+    raw = f.read()
+    # Try encodings in order: utf-8-sig (BOM), utf-8, latin-1/cp1252 (Windows)
+    for enc in ('utf-8-sig', 'utf-8', 'cp1252', 'latin-1'):
+        try:
+            return raw.decode(enc).splitlines()
+        except (UnicodeDecodeError, LookupError):
+            continue
+    # Last resort - decode with replacement chars
+    return raw.decode('utf-8', errors='replace').splitlines()
+
+
+# -- Staff config page -----------------------------------------
+
+@login_required
+def password_expiry_config(request):
+    if not request.user.is_staff:
+        messages.error(request, 'Access denied. Staff only.')
+        return redirect('dashboard:dashboard')
+
+    config = ExpiryAlertConfig.get()
+
+    if request.method == 'POST' and 'alert_days' in request.POST:
+        config.alert_days   = int(request.POST.get('alert_days', 7))
+        config.alert_emails = request.POST.get('alert_emails', '').strip()
+        config.updated_by   = request.user
+        config.save()
+        logger.info("Expiry config saved by '%s'", request.user.username)
+        messages.success(request, 'Configuration saved.')
+        return redirect('dashboard:password_expiry_config')
+
+    per_page = int(request.GET.get('per_page', 10))
+    if per_page not in (10, 20, 50, 100):
+        per_page = 10
+
+    nodes    = NodePasswordExpiry.objects.filter(is_active=True).order_by('node_ip', 'username')
+    all_rows = [_compute_expiry(n) for n in nodes]
+    node_types = NodeType.objects.all().order_by('name')
+
+    return render(request, 'dashboard/password_expiry.html', {
+        'config':      config,
+        'all_rows':    all_rows,
+        'per_page':    per_page,
+        'node_types':  node_types,
+        'is_staff_view': True,
+    })
+
+
+# -- User-facing table -----------------------------------------
+
+@login_required
+def password_expiry_table(request):
+    per_page = int(request.GET.get('per_page', 10))
+    if per_page not in (10, 20, 50, 100):
+        per_page = 10
+
+    nodes    = NodePasswordExpiry.objects.filter(is_active=True).order_by('node_ip', 'username')
+    all_rows = [_compute_expiry(n) for n in nodes]
+
+    return render(request, 'dashboard/password_expiry_table.html', {
+        'all_rows': all_rows,
+        'per_page': per_page,
+    })
+
+
+# -- Manual alert trigger --------------------------------------
+
+@login_required
+def run_expiry_check_now(request):
+    if not request.user.is_staff:
+        messages.error(request, 'Access denied.')
+        return redirect('dashboard:dashboard')
+
+    if request.method == 'POST':
+        config = ExpiryAlertConfig.get()
+        nodes  = NodePasswordExpiry.objects.filter(is_active=True)
+        rows   = [_compute_expiry(n) for n in nodes]
+
+        if not rows:
+            messages.error(request, 'No active node data in database. Import a CSV first.')
+            return redirect('dashboard:password_expiry_config')
+
+        sent = _send_expiry_alerts(rows, config.alert_emails,
+                                   int(config.alert_days))
+        logger.info("Manual expiry check by '%s' - %s alert(s) sent.",
+                    request.user.username, sent)
+        messages.success(request, f'Expiry check done. Alert sent for {sent} node(s).')
+
+    return redirect('dashboard:password_expiry_config')
+
+
+# -- Full CSV upload (add new + update all columns) ------------
+
+@login_required
+def upload_expiry_csv(request):
+    if not request.user.is_staff:
+        messages.error(request, 'Access denied. Staff only.')
+        return redirect('dashboard:dashboard')
+
+    if request.method != 'POST' or 'csv_file' not in request.FILES:
+        messages.error(request, 'No file uploaded.')
+        return redirect('dashboard:password_expiry_config')
+
+    f = request.FILES['csv_file']
+    if not f.name.lower().endswith('.csv'):
+        messages.error(request, 'Only .csv files are supported.')
+        return redirect('dashboard:password_expiry_config')
+
+    reader  = csv.DictReader(_read_csv_bytes(f))
+    created = updated = skipped = 0
+    errors  = []
+
+    for i, raw in enumerate(reader, start=2):
+        row      = {k.strip(): (v.strip() if v else '') for k, v in raw.items()}
+        node_ip  = row.get('Node IP', '').strip()
+        username = row.get('Username', '').strip()
+
+        if not node_ip or not username:
+            errors.append(f'Row {i}: missing Node IP or Username - skipped.')
+            skipped += 1
+            continue
+
+        reset_date = _parse_date(row.get('Last Password Reset Date', ''))
+        if reset_date is None:
+            errors.append(f'Row {i} ({node_ip}/{username}): unparseable date - skipped.')
+            skipped += 1
+            continue
+
+        # Get or create NodeType from the string value in CSV
+        # Use policy_days from CSV if provided, else default 90
+        node_type_name = row.get('Node Type', '').strip()
+        node_type_obj  = None
+        if node_type_name:
+            try:
+                csv_policy_days = int(row.get('Policy Days', 90) or 90)
+            except (ValueError, TypeError):
+                csv_policy_days = 90
+
+            node_type_obj, nt_created = NodeType.objects.get_or_create(
+                name=node_type_name,
+                defaults={'policy_days': csv_policy_days}
+            )
+            # If NodeType already existed but policy_days is different, update it
+            if not nt_created and node_type_obj.policy_days != csv_policy_days:
+                node_type_obj.policy_days = csv_policy_days
+                node_type_obj.updated_by = request.user
+                node_type_obj.save()
+
+        _, created_flag = NodePasswordExpiry.objects.update_or_create(
+            node_ip=node_ip,
+            username=username,
+            defaults={
+                'managed_by':               row.get('Managed By', ''),
+                'node_name':                row.get('Node Name', ''),
+                'node_type':                node_type_obj,
+                'node_owner':               row.get('Node Owner', ''),
+                'last_password_reset_date': reset_date,
+                'recent_password':          row.get('Recent Password', ''),
+                'is_active':                True,
+                'updated_by':               request.user,
+            }
+        )
+        if created_flag:
+            created += 1
+        else:
+            updated += 1
+
+    summary = f'Full import done - {created} created, {updated} updated, {skipped} skipped.'
+    logger.info("%s (by '%s')", summary, request.user.username)
+    for e in errors[:5]:
+        messages.warning(request, e)
+    messages.success(request, summary)
+    return redirect('dashboard:password_expiry_config')
+
+
+# -- Partial update CSV (only date + password) -----------------
+
+@login_required
+def update_expiry_csv(request):
+    if not request.user.is_staff:
+        messages.error(request, 'Access denied. Staff only.')
+        return redirect('dashboard:dashboard')
+
+    if request.method != 'POST' or 'update_csv_file' not in request.FILES:
+        messages.error(request, 'No file uploaded.')
+        return redirect('dashboard:password_expiry_config')
+
+    f = request.FILES['update_csv_file']
+    if not f.name.lower().endswith('.csv'):
+        messages.error(request, 'Only .csv files are supported.')
+        return redirect('dashboard:password_expiry_config')
+
+    reader    = csv.DictReader(_read_csv_bytes(f))
+    updated   = 0
+    not_found = 0
+    skipped   = 0
+    errors    = []
+
+    for i, raw in enumerate(reader, start=2):
+        row      = {k.strip(): (v.strip() if v else '') for k, v in raw.items()}
+        node_ip  = row.get('Node IP', '').strip()
+        username = row.get('Username', '').strip()
+
+        if not node_ip or not username:
+            errors.append(f'Row {i}: missing Node IP or Username - skipped.')
+            skipped += 1
+            continue
+
+        reset_date = _parse_date(row.get('Last Password Reset Date', ''))
+        if reset_date is None:
+            errors.append(f'Row {i} ({node_ip}/{username}): unparseable date - skipped.')
+            skipped += 1
+            continue
+
+        count = NodePasswordExpiry.objects.filter(
+            node_ip=node_ip, username=username
+        ).update(
+            last_password_reset_date=reset_date,
+            recent_password=row.get('Recent Password', '').strip(),
+            updated_by=request.user,
+        )
+
+        if count:
+            updated += 1
+        else:
+            errors.append(f'Row {i} ({node_ip}/{username}): not found in DB - skipped.')
+            not_found += 1
+
+    summary = f'Update done - {updated} updated, {not_found} not found, {skipped} skipped.'
+    logger.info("%s (by '%s')", summary, request.user.username)
+    for e in errors[:5]:
+        messages.warning(request, e)
+    messages.success(request, summary)
+    return redirect('dashboard:password_expiry_config')
+
+
+# -- Bulk update NodeType policy / reset date ------------------
+
+@login_required
+def bulk_update_node_type(request):
+    """
+    Staff can update policy_days and/or default_last_reset_date for a NodeType.
+    If default_last_reset_date is set, all nodes of that type get their
+    last_password_reset_date updated to that date.
+    """
+    if not request.user.is_staff:
+        messages.error(request, 'Access denied.')
+        return redirect('dashboard:dashboard')
+
+    if request.method != 'POST':
+        return redirect('dashboard:password_expiry_config')
+
+    node_type_id  = request.POST.get('node_type_id')
+    policy_days   = request.POST.get('policy_days', '').strip()
+    reset_date_raw = request.POST.get('default_last_reset_date', '').strip()
+
+    try:
+        nt = NodeType.objects.get(pk=node_type_id)
+    except NodeType.DoesNotExist:
+        messages.error(request, 'Node type not found.')
+        return redirect('dashboard:password_expiry_config')
+
+    if policy_days.isdigit():
+        nt.policy_days = int(policy_days)
+
+    reset_date = _parse_date(reset_date_raw) if reset_date_raw else None
+    if reset_date:
+        nt.default_last_reset_date = reset_date
+        updated_count = NodePasswordExpiry.objects.filter(
+            node_type=nt, is_active=True
+        ).update(
+            last_password_reset_date=reset_date,
+            updated_by=request.user,
+        )
+        messages.success(request,
+            f'Reset date updated for {updated_count} nodes of type "{nt.name}".')
+        logger.info("Bulk reset date update: NodeType='%s' date='%s' by '%s' - %s nodes",
+                    nt.name, reset_date, request.user.username, updated_count)
+
+    nt.save()
+    messages.success(request, f'NodeType "{nt.name}" saved.')
+    return redirect('dashboard:password_expiry_config')
+
+
+# -- Deactivate / reactivate node -----------------------------
+
+@login_required
+def toggle_node_active(request, node_id):
+    if not request.user.is_staff:
+        messages.error(request, 'Access denied.')
+        return redirect('dashboard:dashboard')
+
+    node = get_object_or_404(NodePasswordExpiry, pk=node_id)
+    node.is_active = not node.is_active
+    node.updated_by = request.user
+    node.save()
+    state = 'activated' if node.is_active else 'deactivated'
+    messages.success(request, f'Node {node.node_ip}/{node.username} {state}.')
+    logger.info("Node %s/%s %s by '%s'",
+                node.node_ip, node.username, state, request.user.username)
+    return redirect('dashboard:password_expiry_config')

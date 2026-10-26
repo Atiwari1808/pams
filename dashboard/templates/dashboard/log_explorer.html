@@ -1,0 +1,91 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Log Explorer – PAMS{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-between mb-4">
+    <div>
+        <h4 class="fw-bold mb-0">
+            <i class="bi bi-folder2-open me-2 text-secondary"></i>Admin Log Explorer
+        </h4>
+        <small class="text-muted">Browse <code>media/logs/</code></small>
+    </div>
+    <div class="d-flex gap-2 align-items-center">
+        <span class="text-muted small me-1">Sort:</span>
+        <a href="?path={{ cur_rel|urlencode }}&sort=name"
+           class="btn btn-sm {% if sort == 'name' %}btn-primary{% else %}btn-outline-secondary{% endif %}">Name</a>
+        <a href="?path={{ cur_rel|urlencode }}&sort=date"
+           class="btn btn-sm {% if sort == 'date' %}btn-primary{% else %}btn-outline-secondary{% endif %}">Date</a>
+        <a href="?path={{ cur_rel|urlencode }}&sort=size"
+           class="btn btn-sm {% if sort == 'size' %}btn-primary{% else %}btn-outline-secondary{% endif %}">Size</a>
+        <a href="{% url 'dashboard:dashboard' %}" class="btn btn-sm btn-outline-primary ms-1">
+            <i class="bi bi-arrow-left"></i> Dashboard
+        </a>
+    </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="task-card mb-3 py-2">
+    <span class="small">
+        <a href="?path=" class="text-decoration-none">
+            <i class="bi bi-house-door"></i> logs
+        </a>
+        {% if cur_rel %}<span class="text-muted"> / {{ cur_rel }}</span>{% endif %}
+    </span>
+</div>
+
+<!-- Listing -->
+<div class="task-card p-0">
+    <table class="table table-hover mb-0 align-middle">
+        <thead class="table-light">
+            <tr>
+                <th class="ps-3">Name</th>
+                <th>Size</th>
+                <th class="text-end pe-3">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if not at_root %}
+            <tr>
+                <td colspan="3" class="ps-3">
+                    <a href="?path={{ parent_rel|urlencode }}" class="text-decoration-none text-secondary">
+                        <i class="bi bi-arrow-90deg-up"></i> ..
+                    </a>
+                </td>
+            </tr>
+            {% endif %}
+
+            {% for e in entries %}
+            <tr>
+                <td class="ps-3">
+                    {% if e.is_dir %}
+                    <a href="?path={{ e.rel|urlencode }}" class="text-decoration-none fw-semibold">
+                        <i class="bi bi-folder-fill text-warning me-1"></i>{{ e.name }}
+                    </a>
+                    {% else %}
+                    <a href="{% url 'dashboard:log_explorer_view' %}?path={{ e.rel|urlencode }}"
+                       class="text-decoration-none">
+                        <i class="bi bi-file-earmark-text text-primary me-1"></i>{{ e.name }}
+                    </a>
+                    {% endif %}
+                </td>
+                <td class="text-muted small">
+                    {% if e.is_dir %}&mdash;{% else %}{{ e.size }} B{% endif %}
+                </td>
+                <td class="text-end pe-3">
+                    {% if not e.is_dir %}
+                    <a href="{% url 'dashboard:log_explorer_download' %}?path={{ e.rel|urlencode }}"
+                       class="btn btn-sm btn-outline-success">
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="3" class="text-center text-muted py-4">Empty folder</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

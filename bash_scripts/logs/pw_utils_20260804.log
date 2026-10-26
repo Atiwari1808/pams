@@ -1,0 +1,607 @@
+[2026-08-04 07:42:16] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb OLD=INPUT
+[2026-08-04 07:42:16] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb NEW=INPUT
+[2026-08-04 07:43:02] [INFO   ] ============================================================
+[2026-08-04 07:43:02] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-08-04 07:43:02] [INFO   ]  Source output : /tmp/tmp.WfcJSnuHF4.csv
+[2026-08-04 07:43:02] [INFO   ]  Sidecar       : /tmp/tmp.80S8bwjP0K.json
+[2026-08-04 07:43:02] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_345.csv
+[2026-08-04 07:43:02] [INFO   ] ============================================================
+[2026-08-04 07:43:02] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:1032::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 07:43:02] [INFO   ] ------------------------------------------------------------
+[2026-08-04 07:43:02] [INFO   ] DB updates:  SUCCESS=0  FAILED=0  SKIPPED/NOT_FOUND=1
+[2026-08-04 07:43:02] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_345.csv
+[2026-08-04 07:43:02] [INFO   ] ============================================================
+[2026-08-04 07:43:02] [INFO   ] Post-processing complete: 0 SUCCESS, 0 FAILED, 1 SKIPPED DB updates
+[2026-08-04 07:51:52] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb OLD=INPUT
+[2026-08-04 07:51:52] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb NEW=INPUT
+[2026-08-04 07:52:38] [INFO   ] ============================================================
+[2026-08-04 07:52:38] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-08-04 07:52:38] [INFO   ]  Source output : /tmp/tmp.qswqD1V7wO.csv
+[2026-08-04 07:52:38] [INFO   ]  Sidecar       : /tmp/tmp.4E8VaiOBiN.json
+[2026-08-04 07:52:38] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_346.csv
+[2026-08-04 07:52:38] [INFO   ] ============================================================
+[2026-08-04 07:52:38] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:1032::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 07:52:38] [INFO   ] ------------------------------------------------------------
+[2026-08-04 07:52:38] [INFO   ] DB updates:  SUCCESS=0  FAILED=0  SKIPPED/NOT_FOUND=1
+[2026-08-04 07:52:38] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_346.csv
+[2026-08-04 07:52:38] [INFO   ] ============================================================
+[2026-08-04 07:52:38] [INFO   ] Post-processing complete: 0 SUCCESS, 0 FAILED, 1 SKIPPED DB updates
+[2026-08-04 07:54:29] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb OLD=INPUT
+[2026-08-04 07:54:29] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb NEW=INPUT
+[2026-08-04 07:55:14] [INFO   ] ============================================================
+[2026-08-04 07:55:14] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-08-04 07:55:14] [INFO   ]  Source output : /tmp/tmp.URDfJAnREs.csv
+[2026-08-04 07:55:14] [INFO   ]  Sidecar       : /tmp/tmp.ayDVN2SO3X.json
+[2026-08-04 07:55:14] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_347.csv
+[2026-08-04 07:55:14] [INFO   ] ============================================================
+[2026-08-04 07:55:14] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:1032::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 07:55:14] [INFO   ] ------------------------------------------------------------
+[2026-08-04 07:55:14] [INFO   ] DB updates:  SUCCESS=0  FAILED=0  SKIPPED/NOT_FOUND=1
+[2026-08-04 07:55:14] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_347.csv
+[2026-08-04 07:55:14] [INFO   ] ============================================================
+[2026-08-04 07:55:14] [INFO   ] Post-processing complete: 0 SUCCESS, 0 FAILED, 1 SKIPPED DB updates
+[2026-08-04 08:04:07] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb OLD=INPUT
+[2026-08-04 08:04:07] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb NEW=INPUT
+[2026-08-04 08:04:08] [INFO   ] ============================================================
+[2026-08-04 08:04:08] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-08-04 08:04:08] [INFO   ]  Source output : /tmp/tmp.vJ0SfcFSLg.csv
+[2026-08-04 08:04:08] [INFO   ]  Sidecar       : /tmp/tmp.IMWUZsHfp6.json
+[2026-08-04 08:04:08] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_348.csv
+[2026-08-04 08:04:08] [INFO   ] ============================================================
+[2026-08-04 08:04:08] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1032::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 08:04:08] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1032::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 08:04:08] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1032::5 user=espdtmb
+[2026-08-04 08:04:08] [INFO   ] ------------------------------------------------------------
+[2026-08-04 08:04:08] [INFO   ] DB updates:  SUCCESS=1  FAILED=0  SKIPPED/NOT_FOUND=0
+[2026-08-04 08:04:08] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_348.csv
+[2026-08-04 08:04:08] [INFO   ] ============================================================
+[2026-08-04 08:04:08] [INFO   ] Post-processing complete: 1 SUCCESS, 0 FAILED, 0 SKIPPED DB updates
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:d4:1a14::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:d4:1a14::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:d4:b10::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:d4:b10::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:0054:0864::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:0054:0864::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e13::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e13::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:c50::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:c50::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:816::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:816::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c0c::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c0c::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1f1a::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1f1a::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:2110::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:2110::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:50D::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:50D::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:d4:1a47::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:d4:1a47::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c7a::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c7a::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:986::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:986::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:ca0::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:ca0::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e51::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e51::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:caa::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:caa::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:213d::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:213d::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:54:8b4::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:54:8b4::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e4f::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e4f::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:cca::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:cca::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e32::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e32::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:ca4::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:ca4::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:ca2::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:ca2::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e4d::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e4d::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c7c::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c7c::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:54:86a::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:54:86a::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:213f::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:213f::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:988::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:988::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:b29::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:b29::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:d4:b6c::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:d4:b6c::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1411::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1411::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e72::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:e72::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:85d::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:85d::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1943::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1943::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1941::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1941::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:54:08c4::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:54:08c4::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:846::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:846::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:b3a::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:b3a::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:995::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:995::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:0024:20b4::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:0024:20b4::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:20b6::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:20b6::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1010::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1010::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:20b8::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:20b8::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:2549::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:09:07] [DEBUG  ] resolve: ip=2401:4900:24:2549::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:10:42] [INFO   ] ============================================================
+[2026-08-04 20:10:42] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-08-04 20:10:42] [INFO   ]  Source output : /tmp/tmp.obVm4Qu1Pe.csv
+[2026-08-04 20:10:42] [INFO   ]  Sidecar       : /tmp/tmp.7WiUqLjaGg.json
+[2026-08-04 20:10:42] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_353.csv
+[2026-08-04 20:10:42] [INFO   ] ============================================================
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:d4:b10::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:d4:b10::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:d4:b10::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:0054:0864::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:0054:0864::5 user=espdtmb - NOT in PAMS DB
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:0054:0864::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:d4:1a14::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:d4:1a14::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:d4:1a14::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e13::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e13::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e13::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:c50::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:c50::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:c50::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:816::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:816::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:816::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1f1a::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1f1a::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1f1a::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:b06::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:b06::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:b06::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1c0c::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1c0c::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1c0c::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:50D::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:24:50D::5 user=espdtmb - NOT in PAMS DB
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:24:50D::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:2110::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:2110::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:2110::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1c7a::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1c7a::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1c7a::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:986::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:986::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:986::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:d4:1a47::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:d4:1a47::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:d4:1a47::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:ca0::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:ca0::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:ca0::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e51::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e51::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e51::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:caa::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:caa::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:caa::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:213d::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:213d::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:213d::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:cca::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:cca::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:cca::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e32::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e32::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e32::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:54:8b4::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:54:8b4::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:54:8b4::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e4f::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e4f::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e4f::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:ca4::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:ca4::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:ca4::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1c7e::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1c7e::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1c7e::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:ca2::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:ca2::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:ca2::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:54:86a::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:54:86a::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:54:86a::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e4d::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e4d::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e4d::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1c7c::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1c7c::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1c7c::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:213f::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:213f::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:213f::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:988::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:988::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:988::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:b29::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:24:b29::5 user=espdtmb - NOT in PAMS DB
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:24:b29::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:d4:b6c::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:d4:b6c::5 user=espdtmb - NOT in PAMS DB
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:d4:b6c::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1411::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1411::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1411::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e72::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e72::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e72::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:262c::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:262c::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:262c::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:85d::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:85d::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:85d::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1943::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1943::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1943::5 user=espdtmb
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:262c::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1941::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1941::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1941::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:54:08c4::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:54:08c4::5 user=espdtmb - NOT in PAMS DB
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:54:08c4::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:846::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:846::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:846::5 user=espdtmb
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:1c7e::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:b06::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:b3a::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:b3a::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:b3a::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:995::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:995::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:995::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:0024:20b4::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:0024:20b4::5 user=espdtmb - NOT in PAMS DB
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:0024:20b4::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:20b6::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:20b6::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:20b6::5 user=espdtmb
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1010::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1010::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1010::5 user=espdtmb
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:1032::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:10:42] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:20b8::5 user=espdtmb db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:10:42] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:20b8::5 user=espdtmb rows=1 date=2026-08-04
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:20b8::5 user=espdtmb
+[2026-08-04 20:10:42] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:2549::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:10:42] [INFO   ] ------------------------------------------------------------
+[2026-08-04 20:10:42] [INFO   ] DB updates:  SUCCESS=40  FAILED=0  SKIPPED/NOT_FOUND=11
+[2026-08-04 20:10:42] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_353.csv
+[2026-08-04 20:10:42] [INFO   ] ============================================================
+[2026-08-04 20:10:42] [INFO   ] Post-processing complete: 40 SUCCESS, 0 FAILED, 11 SKIPPED DB updates
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:d4:1a14::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:d4:1a14::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:d4:b10::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:d4:b10::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:0054:0864::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:0054:0864::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e13::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e13::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:c50::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:c50::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:816::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:816::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c0c::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c0c::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1f1a::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1f1a::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:2110::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:2110::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:50D::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:50D::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:d4:1a47::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:d4:1a47::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c7a::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c7a::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:986::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:986::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:ca0::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:ca0::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e51::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e51::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:caa::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:caa::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:213d::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:213d::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:54:8b4::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:54:8b4::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e4f::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e4f::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:cca::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:cca::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e32::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e32::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:ca4::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:ca4::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:ca2::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:ca2::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e4d::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e4d::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c7c::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c7c::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:54:86a::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:54:86a::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:213f::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:213f::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:988::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:988::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:b29::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:b29::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:d4:b6c::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:d4:b6c::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1411::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1411::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e72::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:e72::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:85d::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:85d::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1943::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1943::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1941::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1941::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:54:08c4::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:54:08c4::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:846::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:846::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:b3a::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:b3a::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:995::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:995::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:0024:20b4::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:0024:20b4::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:20b6::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:20b6::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1010::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1010::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:20b8::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:20b8::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:1032::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:2549::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:14:16] [DEBUG  ] resolve: ip=2401:4900:24:2549::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:16:04] [INFO   ] ============================================================
+[2026-08-04 20:16:04] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-08-04 20:16:04] [INFO   ]  Source output : /tmp/tmp.BuMbu1EkE4.csv
+[2026-08-04 20:16:04] [INFO   ]  Sidecar       : /tmp/tmp.eJw5VCZnOq.json
+[2026-08-04 20:16:04] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_354.csv
+[2026-08-04 20:16:04] [INFO   ] ============================================================
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:d4:b10::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:d4:b10::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:d4:b10::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:0054:0864::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:0054:0864::5 user=ebdmots - NOT in PAMS DB
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:0054:0864::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:d4:1a14::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:d4:1a14::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:d4:1a14::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:c50::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:c50::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:c50::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:816::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:816::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:816::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e13::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e13::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e13::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:b06::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:b06::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:b06::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1c0c::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1c0c::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1c0c::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:50D::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:24:50D::5 user=ebdmots - NOT in PAMS DB
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:24:50D::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:2110::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:2110::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:2110::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1c7a::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1c7a::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1c7a::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1f1a::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1f1a::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1f1a::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:986::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:986::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:986::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:d4:1a47::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:d4:1a47::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:d4:1a47::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:ca0::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:ca0::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:ca0::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e51::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e51::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e51::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:caa::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:caa::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:caa::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:213d::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:213d::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:213d::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:cca::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:cca::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:cca::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e32::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e32::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e32::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:54:8b4::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:54:8b4::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:54:8b4::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e4f::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e4f::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e4f::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:ca4::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:ca4::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:ca4::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1c7e::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1c7e::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1c7e::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e4d::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e4d::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e4d::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:ca2::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:ca2::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:ca2::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:54:86a::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:54:86a::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:54:86a::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1c7c::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1c7c::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1c7c::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:213f::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:213f::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:213f::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:988::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:988::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:988::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:b29::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:24:b29::5 user=ebdmots - NOT in PAMS DB
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:24:b29::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:d4:b6c::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:d4:b6c::5 user=ebdmots - NOT in PAMS DB
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:d4:b6c::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1411::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1411::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1411::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:e72::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:e72::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:e72::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:262c::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:262c::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:262c::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:85d::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:85d::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:85d::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1941::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1941::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1941::5 user=ebdmots
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:262c::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1943::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1943::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1943::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:846::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:846::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:846::5 user=ebdmots
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:1c7e::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:b06::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:b3a::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:995::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:0024:20b4::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:0024:20b4::5 user=ebdmots - NOT in PAMS DB
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:0024:20b4::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:20b6::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:20b6::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:20b6::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:24:1010::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [INFO   ] update_db_after_reset: SUCCESS ip=2401:4900:24:1010::5 user=ebdmots rows=1 date=2026-08-04
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SUCCESS  ip=2401:4900:24:1010::5 user=ebdmots
+[2026-08-04 20:16:04] [DEBUG  ] update_db_after_reset: ip=2401:4900:54:08c4::5 user=ebdmots db=/home/lcmuser/PAMS/pams_project_v6/db.sqlite3
+[2026-08-04 20:16:04] [WARNING] update_db_after_reset: no rows matched ip=2401:4900:54:08c4::5 user=ebdmots - NOT in PAMS DB
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE NOT_FOUND ip=2401:4900:54:08c4::5 user=ebdmots
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:1032::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:20b8::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:16:04] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:2549::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:16:04] [INFO   ] ------------------------------------------------------------
+[2026-08-04 20:16:04] [INFO   ] DB updates:  SUCCESS=37  FAILED=0  SKIPPED/NOT_FOUND=14
+[2026-08-04 20:16:04] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_354.csv
+[2026-08-04 20:16:04] [INFO   ] ============================================================
+[2026-08-04 20:16:04] [INFO   ] Post-processing complete: 37 SUCCESS, 0 FAILED, 14 SKIPPED DB updates
+[2026-08-04 20:45:36] [DEBUG  ] resolve: ip=2401:4900:24:b3a::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:45:36] [DEBUG  ] resolve: ip=2401:4900:24:b3a::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:45:36] [DEBUG  ] resolve: ip=2401:4900:24:995::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:45:36] [DEBUG  ] resolve: ip=2401:4900:24:995::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:45:36] [DEBUG  ] resolve: ip=2401:4900:24:20b8::5 user=ebdmots OLD=INPUT
+[2026-08-04 20:45:36] [DEBUG  ] resolve: ip=2401:4900:24:20b8::5 user=ebdmots NEW=INPUT
+[2026-08-04 20:45:46] [INFO   ] ============================================================
+[2026-08-04 20:45:46] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-08-04 20:45:46] [INFO   ]  Source output : /tmp/tmp.TuybPeUXsC.csv
+[2026-08-04 20:45:46] [INFO   ]  Sidecar       : /tmp/tmp.vwaDWi8I2E.json
+[2026-08-04 20:45:46] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_356.csv
+[2026-08-04 20:45:46] [INFO   ] ============================================================
+[2026-08-04 20:45:46] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:995::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:45:46] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:20b8::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:45:46] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:b3a::5 user=ebdmots reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:45:46] [INFO   ] ------------------------------------------------------------
+[2026-08-04 20:45:46] [INFO   ] DB updates:  SUCCESS=0  FAILED=0  SKIPPED/NOT_FOUND=3
+[2026-08-04 20:45:46] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_356.csv
+[2026-08-04 20:45:46] [INFO   ] ============================================================
+[2026-08-04 20:45:46] [INFO   ] Post-processing complete: 0 SUCCESS, 0 FAILED, 3 SKIPPED DB updates
+[2026-08-04 20:54:57] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:54:57] [DEBUG  ] resolve: ip=2401:4900:24:262c::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:54:57] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:54:57] [DEBUG  ] resolve: ip=2401:4900:24:1c7e::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:54:57] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:54:57] [DEBUG  ] resolve: ip=2401:4900:24:b06::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:54:57] [DEBUG  ] resolve: ip=2401:4900:24:2549::5 user=espdtmb OLD=INPUT
+[2026-08-04 20:54:57] [DEBUG  ] resolve: ip=2401:4900:24:2549::5 user=espdtmb NEW=INPUT
+[2026-08-04 20:55:17] [INFO   ] ============================================================
+[2026-08-04 20:55:17] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-08-04 20:55:17] [INFO   ]  Source output : /tmp/tmp.qrVZjWew0r.csv
+[2026-08-04 20:55:17] [INFO   ]  Sidecar       : /tmp/tmp.swmzIb5b8d.json
+[2026-08-04 20:55:17] [INFO   ]  Final output  : /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_357.csv
+[2026-08-04 20:55:17] [INFO   ] ============================================================
+[2026-08-04 20:55:17] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:1c7e::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:55:17] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:262c::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:55:17] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:b06::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:55:17] [INFO   ] DB UPDATE SKIP  ip=2401:4900:24:2549::5 user=espdtmb reason=Reset was not SUCCESS (status=FAILED) – DB not touched
+[2026-08-04 20:55:17] [INFO   ] ------------------------------------------------------------
+[2026-08-04 20:55:17] [INFO   ] DB updates:  SUCCESS=0  FAILED=0  SKIPPED/NOT_FOUND=4
+[2026-08-04 20:55:17] [INFO   ] Enhanced report written to: /home/lcmuser/PAMS/pams_project_v6/media/outputs/reset_password_output_357.csv
+[2026-08-04 20:55:17] [INFO   ] ============================================================
+[2026-08-04 20:55:17] [INFO   ] Post-processing complete: 0 SUCCESS, 0 FAILED, 4 SKIPPED DB updates

@@ -1,0 +1,8 @@
+[2026-05-27 15:41:36] [DEBUG  ] fetch_password_from_db: ip=10.105.0.149 user=ts_automation db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-05-27 15:41:36] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-05-27 15:42:07] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-05-27 15:42:36] [DEBUG  ] fetch_password_from_db: ip=10.105.0.149 user=ts_automation db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-05-27 15:42:36] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-05-27 15:42:36] [INFO   ] resolve: ip=10.105.0.149 user=ts_automation OLD=DATABASE (from PAMS)
+[2026-05-27 15:42:36] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-05-27 15:42:36] [INFO   ] resolve: ip=10.105.0.149 user=ts_automation NEW=AUTO_GENERATED len=12

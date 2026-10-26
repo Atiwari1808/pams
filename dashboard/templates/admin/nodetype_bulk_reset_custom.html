@@ -1,0 +1,31 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<h1>Set Custom Reset Date for All Nodes of Selected Type(s)</h1>
+
+<p><strong>Selected Node Type(s):</strong>
+{% for nt in queryset %}
+    <span style="background:#1a73e8;color:#fff;padding:2px 8px;border-radius:4px;margin:2px">
+        {{ nt.name }}
+    </span>
+{% endfor %}
+</p>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="ids" value="{{ ids }}">
+    <p>
+        <label for="reset_date"><strong>Reset Date:</strong></label><br>
+        <input type="date" name="reset_date" id="reset_date"
+               value="{{ today }}"
+               style="padding:6px;font-size:14px;border:1px solid #ccc;border-radius:4px"
+               required>
+    </p>
+    <p style="color:#e53e3e;font-size:13px">
+        ⚠ This sets <em>last_password_reset_date</em> for all active nodes of the selected type(s).
+    </p>
+    <input type="submit" name="apply" value="Apply"
+           style="background:#1a73e8;color:#fff;padding:8px 20px;border:none;border-radius:4px;cursor:pointer;font-size:14px">
+    &nbsp;
+    <a href="../../" style="font-size:14px">Cancel</a>
+</form>
+{% endblock %}

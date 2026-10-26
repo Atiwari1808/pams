@@ -1,0 +1,146 @@
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.55.167.101 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.55.167.101 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.55.167.101 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.113.132.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.113.132.7 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.113.132.7 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.91.122.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.122.135 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.122.135 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.45.78.136 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.45.78.136 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.45.78.136 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.91.122.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.122.7 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.122.7 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.91.78.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.78.135 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.78.135 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.91.79.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.79.7 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.79.7 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.91.82.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.82.135 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.91.82.135 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.35.132.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.35.132.7 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.35.132.7 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.35.132.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.35.132.135 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.35.132.135 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.35.133.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.35.133.7 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.35.133.7 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.89.36.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.89.36.135 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.89.36.135 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.113.111.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.113.111.135 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.113.111.135 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: ip=10.113.121.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 18:26:18] [DEBUG  ] fetch_password_from_db: found password (len=10)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.113.121.7 user=elcmadm OLD=DATABASE (from PAMS)
+[2026-06-11 18:26:18] [DEBUG  ] generate_password: generated after 1 attempt(s)
+[2026-06-11 18:26:18] [INFO   ] resolve: ip=10.113.121.7 user=elcmadm NEW=AUTO_GENERATED len=12
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.55.167.101 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.55.167.101 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.113.132.7 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.113.132.7 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.122.135 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.122.135 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.45.78.136 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.45.78.136 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.122.7 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.122.7 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.78.135 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.78.135 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.79.7 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.79.7 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.82.135 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.91.82.135 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.35.132.7 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.35.132.7 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.35.133.7 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.35.133.7 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.89.36.135 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.89.36.135 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.113.111.135 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.113.111.135 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.113.121.7 user=elcmadm OLD=INPUT
+[2026-06-11 19:11:49] [DEBUG  ] resolve: ip=10.113.121.7 user=elcmadm NEW=INPUT
+[2026-06-11 19:11:57] [INFO   ] ============================================================
+[2026-06-11 19:11:57] [INFO   ]  PAMS Enhanced Post-Processing Log
+[2026-06-11 19:11:57] [INFO   ]  Source output : /tmp/tmp.VkSIEYWpeq.csv
+[2026-06-11 19:11:57] [INFO   ]  Sidecar       : /tmp/tmp.kR7LgbLKOW.json
+[2026-06-11 19:11:57] [INFO   ]  Final output  : /home/lcmuser/Abhishek/pams_project_v3/media/outputs/reset_password_output_268.csv
+[2026-06-11 19:11:57] [INFO   ] ============================================================
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.55.167.101 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.55.167.101 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.55.167.101 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.113.132.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.113.132.7 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.113.132.7 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.91.122.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.91.122.135 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.91.122.135 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.45.78.136 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.45.78.136 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.45.78.136 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.91.122.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.91.122.7 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.91.122.7 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.91.78.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.91.78.135 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.91.78.135 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.91.79.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.91.79.7 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.91.79.7 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.35.132.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.35.132.7 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.35.132.7 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.91.82.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.91.82.135 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.91.82.135 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.35.133.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.35.133.7 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.35.133.7 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.113.121.7 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.113.121.7 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.113.121.7 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.113.111.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.113.111.135 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.113.111.135 user=elcmadm
+[2026-06-11 19:11:57] [DEBUG  ] update_db_after_reset: ip=10.89.36.135 user=elcmadm db=/home/lcmuser/Abhishek/pams_project_v3/db.sqlite3
+[2026-06-11 19:11:57] [INFO   ] update_db_after_reset: SUCCESS ip=10.89.36.135 user=elcmadm rows=1 date=2026-06-11
+[2026-06-11 19:11:57] [INFO   ] DB UPDATE SUCCESS  ip=10.89.36.135 user=elcmadm
+[2026-06-11 19:11:57] [INFO   ] ------------------------------------------------------------
+[2026-06-11 19:11:57] [INFO   ] DB updates:  SUCCESS=13  FAILED=0  SKIPPED/NOT_FOUND=0
+[2026-06-11 19:11:57] [INFO   ] Enhanced report written to: /home/lcmuser/Abhishek/pams_project_v3/media/outputs/reset_password_output_268.csv
+[2026-06-11 19:11:57] [INFO   ] ============================================================
+[2026-06-11 19:11:57] [INFO   ] Post-processing complete: 13 SUCCESS, 0 FAILED, 0 SKIPPED DB updates
